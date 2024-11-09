@@ -27,7 +27,7 @@
 
 @font-face {
   font-family: 'Mauline';
-  src: url('fonts/mauline.otf') format('opentype');
+  src: url('fonts/Mauline.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -49,7 +49,6 @@ p, ul>li>a, .copyright, button {
 }
 
 .get-started-bg {
-  /* background: red; */
   width: 100%;
   height: 100vh;
 
