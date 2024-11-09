@@ -1,3 +1,4 @@
+import Access from "@/components/access";
 import Celebrate from "@/components/celebrate";
 import FAQ from "@/components/faq";
 import Footer from "@/components/footer";
@@ -12,6 +13,7 @@ export default function Home() {
     <div >
       <Nav />
       <Jumbotron />
+      <Access/>
       <Gallery />
       <Celebrate />
       {/* <FAQ /> */}
