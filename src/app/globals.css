@@ -27,7 +27,7 @@
 
 @font-face {
   font-family: 'Mauline';
-  src: url('fonts/Mauline.otf') format('opentype');
+  src: url('./fonts/Mauline.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
