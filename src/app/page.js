@@ -1,6 +1,7 @@
 import Celebrate from "@/components/celebrate";
 import FAQ from "@/components/faq";
 import Footer from "@/components/footer";
+import Gallery from "@/components/gallery";
 import GetStarted from "@/components/get-started";
 import Jumbotron from "@/components/jumbotron";
 import Nav from "@/components/nav";
@@ -11,6 +12,7 @@ export default function Home() {
     <div >
       <Nav />
       <Jumbotron />
+      <Gallery />
       <Celebrate />
       {/* <FAQ /> */}
       <GetStarted />
