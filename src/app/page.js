@@ -16,7 +16,7 @@ export default function Home() {
       <Access/>
       <Gallery />
       <Celebrate />
-      {/* <FAQ /> */}
+      <FAQ />
       <GetStarted />
       <Footer />
     </div>

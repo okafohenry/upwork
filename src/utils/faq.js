@@ -1,0 +1,6 @@
+export const faq = [
+    { id: 1, title: 'How secure are financial contributions made through GatherGram?', body: 'How secure are financial contributions made through GatherGram?' },
+    { id: 2, title: 'Can guests access GatherGram without downloading an app?', body: 'Can guests access GatherGram without downloading an app?' },
+    { id: 3, title: 'Can I customize the trivia questions and love story on GatherGram?', body: 'Can I customize the trivia questions and love story on GatherGram?' },
+    { id: 4, title: 'What happens to our photos and videos after the wedding?', body: 'After your wedding, we carefully review, edit, and enhance all of your photos and videos to ensure they reflect the special moments and emotions of your day. Once editing is complete, we deliver the final high-resolution images and videos to you in a private, secure online gallery where you can download, share, and even order prints. Your photos and videos will be available to you for a lifetime, and we also keep secure backups, so your memories are safe with us. You’ll be able to relive your wedding day whenever you like!' },
+]
