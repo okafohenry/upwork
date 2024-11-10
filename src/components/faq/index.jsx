@@ -22,7 +22,7 @@ export default function FAQ() {
     }
 
     return (
-        <div className="bg-[#FFD6E4]/[.5] faq-bg lg:py-[160px] py-[100px] relative">
+        <div id="faq" className="bg-[#FFD6E4]/[.5] faq-bg lg:py-[160px] py-[100px] relative">
             <Image src={svg1} alt="svg1" className="lg:w-auto w-[20%] absolute right-0 top-0" />
             <Image src={svg2} alt="svg2" className="lg:w-auto w-[20%] absolute right-[17%] top-[15rem]" />
             <Image src={svg3} alt="svg3" className="lg:w-auto w-[20%] absolute left-10 top-10" />

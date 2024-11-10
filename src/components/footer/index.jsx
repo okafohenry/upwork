@@ -7,7 +7,7 @@ export default function Footer() {
   const flexStyle = 'lg:flex grid items-center justify-between w-full'
 
   return (
-    <footer className='bg-secondary w-full'>
+    <footer id="contact" className='bg-secondary w-full'>
       <div className='w-[90%] mx-auto'>
         <div className={`${flexStyle} gap-3 py-7 border-b-[.02px] border-gray-500`}>
           <div>

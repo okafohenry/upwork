@@ -1,27 +1,32 @@
 import Image from "next/image";
 import logo from '../../../public/logo.svg';
+import Link from "next/link";
 
 export default function Nav() {
     return (
         <nav className="w-full lg:h-[100px] lg:py-0 py-4 z-20 fixed top-0 bg-transparent">
             <div className="mx-auto w-[90%]">
                 <div className="flex items-center justify-between">
-                    <Image src={logo} alt="logo" className="lg:w-auto w-[50%]" />
+                    <Link href='/'>
+                        <Image src={logo} alt="logo" className="lg:w-auto w-[50%] hover:cursor-pointer" />
+                    </Link>
                     <ul className="lg:flex hidden items-center gap-x-5">
                         <li>
-                            <a href="" className="text-[17px] p-[10px]">Features</a>
+                            <Link href="" className="text-[17px] p-[10px]">Features</Link>
                         </li>
                         <li>
-                            <a href="" className="text-[17px] p-[10px]">How it works</a>
+                            <Link href="" className="text-[17px] p-[10px]">How it works</Link>
                         </li>
                         <li>
-                            <a href="" className="text-[17px] p-[10px]">FAQs</a>
+                            <Link href="#faq" className="text-[17px] p-[10px]">FAQs</Link>
                         </li>
                         <li>
-                            <a href="" className="text-[17px] p-[10px]">Contact</a>
+                            <Link href="#contact" className="text-[17px] p-[10px]">Contact</Link>
                         </li>
                     </ul>
-                    <button className="lg:block text-[17px] hidden w-[10.5%] text-center bg-primary py-[15px] rounded-[50px]">Get Started</button>
+                    <button className="lg:text-[15px] text-[12px]  lg:w-[10.5%] w-[40%] text-center bg-primary lg:py-[12px] py-[8px] lg:px-0 px-[13px] rounded-[50px]">
+                        <Link href="/get-started">Get Started</Link>
+                    </button>
                 </div>
             </div>    
         </nav>
