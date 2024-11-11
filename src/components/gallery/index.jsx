@@ -3,6 +3,13 @@ import aiTech from '../../../public/ai-tech.svg';
 import anim1 from '../../../public/g-animation1.svg';
 import anim2 from '../../../public/g-animation2.svg';
 import anim3 from '../../../public/g-animation3.svg';
+import overlay1 from '../../../public/overlay-1.svg';
+import overlay2 from '../../../public/overlay-2.svg';
+import overlay3 from '../../../public/overlay-3.svg';
+import overlay4 from '../../../public/overlay-4.svg';
+import overlay5 from '../../../public/overlay-5.svg';
+import overlay6 from '../../../public/overlay-6.svg';
+import overlay7 from '../../../public/overlay-7.svg';
 
 export default function Gallery() {
 
@@ -20,25 +27,47 @@ export default function Gallery() {
                 <p className="lg:w-[65%] mx-auto lg:text-[30px] text-center text-[20px] mt-8  text-[#0D0D0D]">Explore the features that will bring your big day to life, making your wedding celebration unforgettable</p>
                 <div className="grid lg:grid-cols-2 grid-cols-1 gap-5 mt-[4.5rem]">
                     <div className="col-span-1 grid gap-y-5">
-                        <div className={`lg:h-[828px] h-[400px] ${cardStyle} bg-1`}>
+                        <div className={`lg:h-[828px] h-[400px] ${cardStyle} bg-1 relative overflow-hidden group`}>
                             <h3 className={`${absoluteTop}`}>Capture Every Precious Moment</h3>
                             <p className={`${absoluteBottom}`}>Your Guests, Your Memories</p>
+
+                            <Image 
+                                src={overlay1} 
+                                alt="overlay-1" 
+                                className="absolute object-cover h-full inset-0 bg-black bg-opacity-70 opacity-0 -translate-x-full group-hover:opacity-100 group-hover:translate-x-0 flex items-center justify-center transition-all duration-300" 
+                            />
                         </div>
-                        <div className={`h-[400px] ${cardStyle} bg-2`}>
+                        <div className={`h-[400px] ${cardStyle} bg-2 relative overflow-hidden group`}>
                             <h3 className={`${absoluteTop}`}>Event Details & Itinerary</h3>
                             <p className={`${absoluteBottom}`}>Every Detail in One Place</p>
+
+                            <Image 
+                                src={overlay5} 
+                                alt="overlay-5" 
+                                className="absolute object-cover h-full inset-0 bg-black bg-opacity-70 opacity-0 translate-x-full group-hover:opacity-100 group-hover:translate-x-0 flex items-center justify-center transition-all duration-300" 
+                            />
                         </div>
-                        <div className={`lg:h-[828px] h-[400px] ${cardStyle} bg-3`}>
+                        <div className={`lg:h-[828px] h-[400px] ${cardStyle} bg-3 relative overflow-hidden group`}>
                             <h3 className={`${absoluteTop}`}>Gifts from the Heart,<br /> Sent Securely</h3>
                             <p className={`${absoluteBottom}`}>Easy Contributions, Lasting Gratitude</p>
+                            <Image 
+                                src={overlay7} 
+                                alt="overlay-7" 
+                                className="absolute object-cover h-full inset-0 bg-black bg-opacity-70 opacity-0 -translate-x-full group-hover:opacity-100 group-hover:translate-x-0 flex items-center justify-center transition-all duration-300" 
+                            />
                         </div>
-                        <div className={`h-[400px] ${cardStyle} bg-4`}>
+                        <div className={`h-[400px] ${cardStyle} bg-4 relative overflow-hidden group`}>
                             <h3 className={`${absoluteTop}`}>Fun & Laughter with Couple Trivia</h3>
                             <p className={`${absoluteBottom}`}>Engage Your Guests Like Never Before</p>
+                            <Image 
+                                src={overlay6} 
+                                alt="overlay-6" 
+                                className="absolute object-cover h-full inset-0 bg-black bg-opacity-70 opacity-0 -translate-x-full group-hover:opacity-100 group-hover:translate-x-0 flex items-center justify-center transition-all duration-300" 
+                            />
                         </div>
                     </div>
                     <div className="col-span-1 grid gap-y-5">
-                        <div className={`h-[400px] ${cardStyle} bg-5`}>
+                        <div className={`h-[400px] ${cardStyle} bg-5 relative overflow-hidden group`}>
                             <div className='absolute top-10 ml-10'>
                                 <div className="flex items-center gap-x-3">
                                     <Image src={aiTech} alt="ai" className='md:w-auto w-[15%]' />
@@ -47,8 +76,13 @@ export default function Gallery() {
                                 <h3 className={`lg:text-[37px] text-[27px]`}>Virtual Guestbook</h3>
                             </div>
                             <p className={`${absoluteBottom}`}>A Digital Keepsake of Love & Laughter</p>
+                            <Image 
+                                src={overlay3} 
+                                alt="overlay-3" 
+                                className="absolute object-cover h-full inset-0 bg-black bg-opacity-70 opacity-0 translate-x-full  group-hover:opacity-100 group-hover:translate-x-0 flex items-center justify-center transition-all duration-300" 
+                            />
                         </div>
-                        <div className={`lg:h-[1250px] h-[400px] ${cardStyle} bg-6`}>
+                        <div className={`lg:h-[1250px] h-[400px] ${cardStyle} bg-6 relative overflow-hidden group`}>
                             <div className='absolute top-10 ml-10'>
                                 <div className="flex items-center gap-x-3">
                                     <Image src={aiTech} alt="ai" className='md:w-auto w-[15%]' />
@@ -57,10 +91,20 @@ export default function Gallery() {
                                 <h3 className={`lg:text-[37px] text-[27px]`}>Your Personalized Love Story,<br className='lg:block hidden' /> Beautifully Told</h3>
                             </div>
                             <p className={`${absoluteBottom}`}>A Journey Worth Sharing</p>
+                            <Image 
+                                src={overlay4} 
+                                alt="overlay-4" 
+                                className="absolute object-cover h-full inset-0 bg-black bg-opacity-70 opacity-0 translate-x-full  group-hover:opacity-100 group-hover:translate-x-0 flex items-center justify-center transition-all duration-300" 
+                            />
                         </div>
-                        <div className={`lg:h-[828px] h-[400px] ${cardStyle} bg-7`}>
+                        <div className={`lg:h-[828px] h-[400px] ${cardStyle} bg-7 relative overflow-hidden group`}>
                             <h3 className={`${absoluteTop}`}>Personalized Photo Album</h3>
                             <p className={`${absoluteBottom}`}>Where Your Wedding Moments Live On</p>
+                            <Image 
+                                src={overlay2} 
+                                alt="overlay-2" 
+                                className="absolute object-cover h-full inset-0 bg-black bg-opacity-70 opacity-0 translate-x-full  group-hover:opacity-100 group-hover:translate-x-0 flex items-center justify-center transition-all duration-300" 
+                            />
                         </div>
                     </div>
                 </div>
