@@ -21,9 +21,9 @@ export default function ContactForm({ closeModal }) {
         <div className='fixed z-[1020] backdrop-blur-sm w-full h-full top-0 left-0 bottom-0 bg-[#747474]/[0.1] backdrop-brightness-50'>
             <div className='lg:w-[80%] w-[95%] m-auto bg-primaryLight rounded-[32px]  mt-[1.5rem] h-[95vh] grid lg:grid-cols-2 grid-cols-1 gap-x-5 lg:p-[2rem] p-[1.2rem] gap-y-7 relative'>
                 <div className='col-span-1'>
-                    <h4 className='text-[#EB87AB] lg:text-[28px] text-[20px] mb-2'>Let’s Connect and Get You Started</h4>
+                    <h4 className='text-[#EB87AB] lg:text-[28px] text-[20px] mb-5'>Let’s Connect and Get You Started</h4>
                     <h2 className='text-primary lg:text-[60px] text-[35px] lg:leading-[60px]'>Simply share a few details with us</h2>
-                    <p className='text-[#EB87AB] lg:text-[20px] mt-5'>And we’ll personally reach out to guide you through all that GatherGram has to offer!</p>
+                    <p className='text-[#EB87AB] lg:text-[20px] mt-7'>And we’ll personally reach out to guide you through all that GatherGram has to offer!</p>
                     <p className='mt-10 flex items-center gap-5 text-primary'>
                         <FaEnvelope size={18} />
                         <span className='text-[18px] underline'>info@gathergram.app</span>

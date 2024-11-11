@@ -5,7 +5,7 @@ import Joyful from "./Joyful";
 import Memorable from "./Memorable";
 import TailoredForYou from "./Tailored";
 
-export default function Access() {
+export default function Access({ openModal }) {
     return (
         <div id="access" data-aos="fade-up" className="lg:w-auto w-[90%] lg:mx-0 mx-auto pt-[10rem] lg:pb-[20rem] pb-[10rem] bg-white relative">
             <Joyful />
@@ -19,8 +19,8 @@ export default function Access() {
                 </h2>
                 <p className="w-[90%] mx-auto lg:text-[30px] text-center text-[20px] mt-8 text-[#0D0D0D]">Join GatherGram’s exclusive Free Access and explore everything our platform has to offer</p>
                 <div className="lg:w-[40%] mx-auto mt-[6rem]">
-                    <button className="free-access-btn w-full text-[16px] rounded-[50px] bg-primary py-[16px] text-center">
-                        <Link href="/get-started">Register for Free Access</Link>
+                    <button onClick={openModal} className="free-access-btn w-full lg:text-[18px] text-[16px] rounded-[50px] bg-primary py-[16px] text-center">
+                        Register for Free Access
                     </button>
                 </div>
             </div>

@@ -5,11 +5,10 @@ import Link from "next/link";
 import { useState } from "react";
 import ContactForm from "../contact-form";
 
-export default function Nav() {
-    const [ openModal, setOpenModal ] = useState(false)
+export default function Nav({ isModalOpen, closeModal, openModal }) {
     return (
         <>
-            <nav className="w-full lg:h-[100px] lg:py-0 py-4 z-20 absolute top-0 bg-transparent bg-blur-sm">
+            <nav className="w-full lg:h-[100px] lg:py-0 py-4 z-20 absolute top-0 bg-transparent backdrop-blur-sm">
                 <div className="mx-auto w-[90%]">
                     <div className="flex items-center justify-between">
                         <Link href='/'>
@@ -20,23 +19,25 @@ export default function Nav() {
                                 <Link href="#gallery" className="text-[17px] p-[10px]">Features</Link>
                             </li>
                             <li>
-                                <Link href="#access" className="text-[17px] p-[10px]">How it works</Link>
+                                <Link href="#how-it-works" className="text-[17px] p-[10px]">How it works</Link>
                             </li>
                             <li>
                                 <Link href="#faq" className="text-[17px] p-[10px]">FAQs</Link>
                             </li>
                             <li>
-                                <Link href="/get-started" className="text-[17px] p-[10px]">Contact</Link>
+                                <Link href="#contact" className="text-[17px] p-[10px]">Contact</Link>
                             </li>
                         </ul>
-                        <button onClick={() => setOpenModal(true)} className="lg:text-[15px] text-[12px]  lg:w-[10.5%] w-[40%] text-center bg-primary hover:bg-primary/[.5] lg:py-[12px] py-[8px] lg:px-0 px-[13px] rounded-[50px]">
+                        <button 
+                        onClick={openModal} 
+                        className="lg:text-[18px] text-[12px]  lg:w-[12.5%] w-[40%] text-center bg-primary hover:bg-primary/[.5] lg:py-[14px] py-[8px] lg:px-0 px-[16px] rounded-[50px]">
                             Get Started
                         </button>
                     </div>
                 </div>    
             </nav>
-            {openModal &&
-                <ContactForm closeModal={() => setOpenModal(false)} />
+            {isModalOpen &&
+                <ContactForm closeModal={closeModal} />
             }
         </>
     )

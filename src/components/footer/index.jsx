@@ -10,10 +10,10 @@ export default function Footer() {
   return (
     <footer id="contact" className='bg-secondary w-full'>
       <div className='w-[90%] mx-auto'>
-        <div className={`${flexStyle} gap-3 py-7 border-b-[.02px] border-gray-500`}>
+        <div className={`${flexStyle} gap-3 py-7 border-b border-[#fafafa] border-opacity-30`}>
           <div>
             <h2 className='text-[30px] font-[600]'>Join Our Newsletter</h2>
-            <p>Keep up to date with our latest news</p>
+            <p className='text-[#fafafa] text-opacity-60'>Keep up to date with our latest news</p>
           </div>
           <div className='flex gap-2 items-center lg:w-[35%]'>
             <input className='rounded-[50px] py-[10px] px-[20px] lg:w-[70%] text-[14px]' placeholder='Enter your email' type="text" />
@@ -29,7 +29,7 @@ export default function Footer() {
               <Image src={logo} alt="logo" />
               <h1></h1>
             </div>
-            <p className='lg:w-[42%]'>
+            <p className='lg:w-[42%] text-[#fafafa] text-opacity-60'>
               We bring all your wedding essentials into one hassle-free, secure, and 
               budget-friendly platform designed to make your day as seamless as it is unforgettable.
             </p>
@@ -41,19 +41,19 @@ export default function Footer() {
               <li>
                 <p className='font-bold text-[18px]'>Platform</p>
               </li>
-              <li>
+              <li className='text-[#fafafa] text-opacity-60'>
                 <Link href="/">Home</Link>
               </li>
-              <li>
+              <li className='text-[#fafafa] text-opacity-60'>
                 <Link href="/get-started">Register</Link>
               </li>
-              <li>
+              <li className='text-[#fafafa] text-opacity-60'>
                 <Link href="#gallery">Features</Link>
               </li>
-              <li>
+              <li className='text-[#fafafa] text-opacity-60'>
                 <Link href="#access">How It Works</Link>
               </li>
-              <li>
+              <li className='text-[#fafafa] text-opacity-60'>
                 <Link href="#faq">FAQs</Link>
               </li>
             </ul>
@@ -62,13 +62,13 @@ export default function Footer() {
               <li className='mb-3'>
                 <p className='font-bold text-[18px]'>Company</p>
               </li>
-              <li className='mb-3'>
+              <li className='mb-3 text-[#fafafa] text-opacity-60'>
                 <a href="#">About</a>
               </li>
-              <li className='mb-3'> 
+              <li className='mb-3 text-[#fafafa] text-opacity-60'> 
                 <a href="#">Careers</a>
               </li>
-              <li className='mb-3'>
+              <li className='mb-3 text-[#fafafa] text-opacity-60'>
                 <a href="#">Contact Us</a>
                 <p>info@gathergram.app</p>
               </li>
@@ -78,20 +78,20 @@ export default function Footer() {
             <li className='mb-3'>
                 <p className='font-bold text-[18px]'>Legal</p>
               </li>
-              <li className='mb-3'>
+              <li className='mb-3 text-[#fafafa] text-opacity-60'>
                 <a href="#">Privacy Policy</a>
               </li>
-              <li className='mb-3'>
+              <li className='mb-3 text-[#fafafa] text-opacity-60'>
                 <a href="#">Terms of Service</a>
               </li>
-              <li>
+              <li className='text-[#fafafa] text-opacity-60'>
                 <a href="#">Cookies</a>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className='pt-3 pb-5 border-t-[.02px] border-gray-500 copyright'>
+        <div className='pt-3 pb-5 border-t border-[#fafafa] border-opacity-30 copyright text-[#fafafa] text-opacity-60'>
           &copy; 2024  GatherGram, all rights reserved.
         </div>
       </div>

@@ -10,24 +10,37 @@ import Nav from "@/components/nav";
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+
+  const [ openModal, setOpenModal ] = useState(false)
+
   useEffect(() => {
     AOS.init({
       // Global settings here
     });
   }, []);
 
+  const handleOpen = () => setOpenModal(true)
+
   return (
     <div >
-      <Nav />
+      <Nav 
+        isModalOpen={openModal} 
+        closeModal={() => setOpenModal(false)} 
+        openModal={handleOpen} 
+      />
       <Jumbotron />
-      <Access/>
+      <Access
+        openModal={handleOpen} 
+      />
       <Gallery />
       <Celebrate />
       <FAQ />
-      <GetStarted />
+      <GetStarted 
+        openModal={handleOpen} 
+        />
       <Footer />
     </div>
   );
