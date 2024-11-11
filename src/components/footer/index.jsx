@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from '../../../public/logo.svg';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Footer() {
 
@@ -41,19 +42,19 @@ export default function Footer() {
                 <p className='font-bold text-[18px]'>Platform</p>
               </li>
               <li>
-                <a href="#">Home</a>
+                <Link href="/">Home</Link>
               </li>
               <li>
-                <a href="#">Register</a>
+                <Link href="/get-started">Register</Link>
               </li>
               <li>
-                <a href="#">Features</a>
+                <Link href="#gallery">Features</Link>
               </li>
               <li>
-                <a href="#">How It Works</a>
+                <Link href="#access">How It Works</Link>
               </li>
               <li>
-                <a href="#">FAQs</a>
+                <Link href="#faq">FAQs</Link>
               </li>
             </ul>
 

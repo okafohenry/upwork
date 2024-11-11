@@ -11,7 +11,7 @@ export default function Gallery() {
     const absoluteBottom = 'absolute bottom-10 lg:text-[25px] text-[18px] ml-10 font-[400] text-white/[.8]'
 
     return (
-        <div className="bg-[#FAFAFA] lg:py-[160px] py-[100px] relative">
+        <div id="gallery" data-aos="fade-down" className="bg-[#FAFAFA] lg:py-[160px] py-[100px] relative">
             <Image src={anim1} alt="anim1" className='absolute bottom-[9%] right-0 z-10 lg:w-auto w-[10%] animate-bounce' />
             <Image src={anim2} alt="anim2" className='absolute top-[13%] lg:-left-10 z-10 lg:w-auto w-[10%] animate-bounce' />
             <Image src={anim3} alt="anim3" className='absolute top-[60%] lg:-left-[3rem] z-10 lg:w-auto w-[10%] animate-pulse' />

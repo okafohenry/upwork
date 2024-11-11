@@ -6,7 +6,7 @@ import joyful from '../../../public/joyful.svg'
 
 export default function Joyful() {
     return (
-        <div className="lg:block hidden absolute -left-[5rem] -mt-[2.5rem]">
+        <div data-aos="fade-in" className="lg:block hidden absolute -left-[5rem] -mt-[2.5rem]">
             <Image src={arrow} className="relative -top-4 -right-[13rem]" />
             <Image src={joyful} className="relative -top-3 -right-[7.5rem]" />
             <Image src={roundImg} className="" />

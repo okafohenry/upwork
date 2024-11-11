@@ -12,19 +12,19 @@ export default function Nav() {
                     </Link>
                     <ul className="lg:flex hidden items-center gap-x-5">
                         <li>
-                            <Link href="" className="text-[17px] p-[10px]">Features</Link>
+                            <Link href="#gallery" className="text-[17px] p-[10px]">Features</Link>
                         </li>
                         <li>
-                            <Link href="" className="text-[17px] p-[10px]">How it works</Link>
+                            <Link href="#access" className="text-[17px] p-[10px]">How it works</Link>
                         </li>
                         <li>
                             <Link href="#faq" className="text-[17px] p-[10px]">FAQs</Link>
                         </li>
                         <li>
-                            <Link href="#contact" className="text-[17px] p-[10px]">Contact</Link>
+                            <Link href="/get-started" className="text-[17px] p-[10px]">Contact</Link>
                         </li>
                     </ul>
-                    <button className="lg:text-[15px] text-[12px]  lg:w-[10.5%] w-[40%] text-center bg-primary lg:py-[12px] py-[8px] lg:px-0 px-[13px] rounded-[50px]">
+                    <button className="lg:text-[15px] text-[12px]  lg:w-[10.5%] w-[40%] text-center bg-primary hover:bg-primary/[.5] lg:py-[12px] py-[8px] lg:px-0 px-[13px] rounded-[50px]">
                         <Link href="/get-started">Get Started</Link>
                     </button>
                 </div>

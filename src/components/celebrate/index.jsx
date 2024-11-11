@@ -8,10 +8,10 @@ export default function Celebrate(){
     return (
         <div className="celebrate-bg">
             <div className="w-[90%] mx-auto">
-                <h1 className="text-center lg:text-[60px] lg:leading-[90px] leading-[50px] text-[45px] pt-[5rem] text-white">Celebrate With Ease</h1>
-                <p className="mt-4 text-center lg:text-[28px] text-[16px]">From setup to celebration, here’s how we make your wedding day <br /> hassle-free</p>
-                <div className="w-full flex items-center lg:gap-x-5 mt-[4rem]">
-                    <div className="bg-white rounded-[50px] pt-[30px] px-[30px] pb-[70px] w-full">
+                <h1 data-aos="fade-down" className="text-center lg:text-[60px] lg:leading-[90px] leading-[50px] text-[45px] pt-[5rem] text-white">Celebrate With Ease</h1>
+                <p data-aos="fade-down" className="mt-4 text-center lg:text-[28px] text-[16px]">From setup to celebration, here’s how we make your wedding day <br /> hassle-free</p>
+                <div data-aos="fade-down" className="w-full flex items-center lg:gap-x-5 mt-[4rem]">
+                    <div className="bg-white rounded-[50px] pt-[30px] px-[30px] pb-[70px] w-full shadow-lg">
                         <Image src={img1} alt="image1" />
                         <div className="grid lg:grid-cols-6 grid-cols-1">
                             <div className="lg:col-span-4 col-span-1">

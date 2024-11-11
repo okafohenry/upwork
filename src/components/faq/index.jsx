@@ -27,12 +27,12 @@ export default function FAQ() {
             <Image src={svg2} alt="svg2" className="lg:w-auto w-[20%] absolute right-[17%] top-[15rem]" />
             <Image src={svg3} alt="svg3" className="lg:w-auto w-[20%] absolute left-10 top-10" />
             <div className="lg:w-[70%] w-[90%] mx-auto text-center text-[#0D0D0D]">
-                <h1 className="lg:text-[65px] text-[40px] font-[600] lg:leading-[94px] leading-[50px]">Got Questions?</h1>
-                <h1 className="lg:text-[65px] text-[40px] font-[600] lg:leading-[94px] leading-[50px]">We've Got <span className="text-primary">Answers</span></h1>
-                <p className="lg:text-[26px] text-[16px] text-center mt-5">Find quick answers to the most common questions</p>
+                <h1 data-aos="fade-up" className="lg:text-[65px] text-[40px] font-[600] lg:leading-[94px] leading-[50px]">Got Questions?</h1>
+                <h1 data-aos="fade-up" className="lg:text-[65px] text-[40px] font-[600] lg:leading-[94px] leading-[50px]">We've Got <span className="text-primary">Answers</span></h1>
+                <p data-aos="fade-up" className="lg:text-[26px] text-[16px] text-center mt-5">Find quick answers to the most common questions</p>
             </div>
 
-            <div className="lg:w-[65%] w-[95%] mx-auto grid lg:gap-y-7 gap-y-3 lg:mt-[5.5rem] mt-[4rem]">
+            <div data-aos="fade-up" className="lg:w-[65%] w-[95%] mx-auto grid lg:gap-y-7 gap-y-3 lg:mt-[5.5rem] mt-[4rem]">
                 {faq.map(({id, title, body }) => (
                     <Accordion 
                     key={id} 
@@ -45,7 +45,7 @@ export default function FAQ() {
                 ))}
             </div>
 
-            <div className="lg:w-[32%] w-[90%] mx-auto mt-[6rem]">
+            <div data-aos="fade-up" className="lg:w-[32%] w-[90%] mx-auto mt-[6rem]">
                 <button className="free-access-btn w-full lg:text-[16px] text-[14px] rounded-[50px] bg-primary py-[16px] text-center">View More FAQ’s</button>
             </div>
         </div>

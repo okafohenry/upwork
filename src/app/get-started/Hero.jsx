@@ -1,6 +1,8 @@
 "use client"
 import { usertype } from '@/utils/utils'
+import Link from 'next/link';
 import React, { useState } from 'react'
+import { IoArrowBackOutline } from "react-icons/io5";
 
 const initialValues = {
     name: "",
@@ -19,6 +21,9 @@ export default function Hero() {
         <div className='h-[100vh] w-full get-started-bg pt-[100px] pb-[50px]'>
             <div className='lg:w-[80%] w-[95%] m-auto bg-primaryLight rounded-[32px] h-[100%] grid lg:grid-cols-2 grid-cols-1 gap-x-5 lg:p-[3rem] p-[1.2rem] gap-y-7'>
                 <div className='col-span-1'>
+                    <Link href="/">
+                        <IoArrowBackOutline className='text-primary' size={23}/>
+                    </Link>
                     <h4 className='text-[#EB87AB] lg:text-[28px] text-[20px] mb-2'>Let’s Connect and Get You Started</h4>
                     <h2 className='text-primary lg:text-[60px] text-[35px] lg:leading-[60px]'>Simply share a few details with us</h2>
                     <p className='text-[#EB87AB] lg:text-[20px] mt-5'>And we’ll personally reach out to guide you through all that GatherGram has to offer!</p>
