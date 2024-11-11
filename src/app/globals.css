@@ -60,7 +60,6 @@ p, ul>li>a, .copyright, button {
 }
 
 .faq-bg {
-  /* background: var(--primary-50, rgba(235, 135, 171, 1)); */
 
   background-image: url('/union.svg');
   background-size: cover;     
@@ -69,7 +68,6 @@ p, ul>li>a, .copyright, button {
 }
 
 .celebrate-bg {
-  /* background: var(--primary-50, rgba(235, 135, 171, 1)); */
   width: 100%;
   height: 120vh;
 
