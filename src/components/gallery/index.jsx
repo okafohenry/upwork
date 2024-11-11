@@ -34,7 +34,7 @@ export default function Gallery() {
                             <Image 
                                 src={overlay1} 
                                 alt="overlay-1" 
-                                className="absolute object-cover h-full inset-0 bg-black bg-opacity-70 opacity-0 -translate-x-full group-hover:opacity-100 group-hover:translate-x-0 flex items-center justify-center transition-all duration-300" 
+                                className="absolute object-cover w-full h-full inset-0 bg-black bg-opacity-70 opacity-0 -translate-x-full group-hover:opacity-100 group-hover:translate-x-0 flex items-center justify-center transition-all duration-300" 
                             />
                         </div>
                         <div className={`h-[400px] ${cardStyle} bg-2 relative overflow-hidden group`}>
@@ -44,7 +44,7 @@ export default function Gallery() {
                             <Image 
                                 src={overlay5} 
                                 alt="overlay-5" 
-                                className="absolute object-cover h-full inset-0 bg-black bg-opacity-70 opacity-0 translate-x-full group-hover:opacity-100 group-hover:translate-x-0 flex items-center justify-center transition-all duration-300" 
+                                className="absolute object-cover w-full h-full inset-0 bg-black bg-opacity-70 opacity-0 translate-x-full group-hover:opacity-100 group-hover:translate-x-0 flex items-center justify-center transition-all duration-300" 
                             />
                         </div>
                         <div className={`lg:h-[828px] h-[400px] ${cardStyle} bg-3 relative overflow-hidden group`}>
@@ -53,7 +53,7 @@ export default function Gallery() {
                             <Image 
                                 src={overlay7} 
                                 alt="overlay-7" 
-                                className="absolute object-cover h-full inset-0 bg-black bg-opacity-70 opacity-0 -translate-x-full group-hover:opacity-100 group-hover:translate-x-0 flex items-center justify-center transition-all duration-300" 
+                                className="absolute object-cover w-full h-full inset-0 bg-black bg-opacity-70 opacity-0 -translate-x-full group-hover:opacity-100 group-hover:translate-x-0 flex items-center justify-center transition-all duration-300" 
                             />
                         </div>
                         <div className={`h-[400px] ${cardStyle} bg-4 relative overflow-hidden group`}>
@@ -62,7 +62,7 @@ export default function Gallery() {
                             <Image 
                                 src={overlay6} 
                                 alt="overlay-6" 
-                                className="absolute object-cover h-full inset-0 bg-black bg-opacity-70 opacity-0 -translate-x-full group-hover:opacity-100 group-hover:translate-x-0 flex items-center justify-center transition-all duration-300" 
+                                className="absolute object-cover w-full h-full inset-0 bg-black bg-opacity-70 opacity-0 -translate-x-full group-hover:opacity-100 group-hover:translate-x-0 flex items-center justify-center transition-all duration-300" 
                             />
                         </div>
                     </div>
@@ -79,7 +79,7 @@ export default function Gallery() {
                             <Image 
                                 src={overlay3} 
                                 alt="overlay-3" 
-                                className="absolute object-cover h-full inset-0 bg-black bg-opacity-70 opacity-0 translate-x-full  group-hover:opacity-100 group-hover:translate-x-0 flex items-center justify-center transition-all duration-300" 
+                                className="absolute object-cover w-full h-full inset-0 bg-black bg-opacity-70 opacity-0 translate-x-full  group-hover:opacity-100 group-hover:translate-x-0 flex items-center justify-center transition-all duration-300" 
                             />
                         </div>
                         <div className={`lg:h-[1250px] h-[400px] ${cardStyle} bg-6 relative overflow-hidden group`}>
@@ -94,7 +94,7 @@ export default function Gallery() {
                             <Image 
                                 src={overlay4} 
                                 alt="overlay-4" 
-                                className="absolute object-cover h-full inset-0 bg-black bg-opacity-70 opacity-0 translate-x-full  group-hover:opacity-100 group-hover:translate-x-0 flex items-center justify-center transition-all duration-300" 
+                                className="absolute object-cover w-full h-full inset-0 bg-black bg-opacity-70 opacity-0 translate-x-full  group-hover:opacity-100 group-hover:translate-x-0 flex items-center justify-center transition-all duration-300" 
                             />
                         </div>
                         <div className={`lg:h-[828px] h-[400px] ${cardStyle} bg-7 relative overflow-hidden group`}>
@@ -103,7 +103,7 @@ export default function Gallery() {
                             <Image 
                                 src={overlay2} 
                                 alt="overlay-2" 
-                                className="absolute object-cover h-full inset-0 bg-black bg-opacity-70 opacity-0 translate-x-full  group-hover:opacity-100 group-hover:translate-x-0 flex items-center justify-center transition-all duration-300" 
+                                className="absolute object-cover w-full h-full inset-0 bg-black bg-opacity-70 opacity-0 translate-x-full  group-hover:opacity-100 group-hover:translate-x-0 flex items-center justify-center transition-all duration-300" 
                             />
                         </div>
                     </div>
