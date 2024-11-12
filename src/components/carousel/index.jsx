@@ -7,7 +7,7 @@ import SlideThree from './SlideThree';
 const Carousel = ({ autoPlay = false, delay = 3000 }) => {
     const [currentIndex, setCurrentIndex] = useState(1);
     const [prevIndex, setPrevIndex] = useState(0);
-    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+    const [screenWidth, setScreenWidth] = useState(window ? window.innerWidth : null);
 
     const setActiveOne = () => setCurrentIndex(1);
     const setActiveTwo = () => {
@@ -23,18 +23,20 @@ const Carousel = ({ autoPlay = false, delay = 3000 }) => {
   
     // Track screen width and set up interval if width <= 900px
     useEffect(() => {
-      const handleResize = () => setScreenWidth(window.innerWidth);
-  
-      // Listen for screen resize
-      window.addEventListener('resize', handleResize);
-  
-      // Set up interval if screen width is 900px or less
-      let interval;
-      if (screenWidth <= 900) {
-        interval = setInterval(() => {
-          nextSlide();
-        }, 10000); // 10 seconds
-      }
+        if(window){
+            const handleResize = () => setScreenWidth(window.innerWidth);
+        
+            // Listen for screen resize
+            window.addEventListener('resize', handleResize);
+        
+            // Set up interval if screen width is 900px or less
+            let interval;
+            if (screenWidth <= 900) {
+              interval = setInterval(() => {
+                nextSlide();
+              }, 10000); // 10 seconds
+            }
+        }
   
       // Clean up on component unmount or when screen width changes
       return () => {
