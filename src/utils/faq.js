@@ -7,16 +7,16 @@ export const faq = [
     { 
         id: 2, 
         title: 'Can guests access GatherGram without downloading an app?', 
-        body: 'Yes, guests can access GatherGram without downloading any app! GatherGram is designed to be web-friendly, so guests can simply visit the GatherGram link you share with them through any web browser on their phone, tablet, or computer. This way, everyone can enjoy the event details, trivia, love story, and photos with ease—no app installation required. It\'s a seamless experience that keeps things simple and accessible for all your guests.' 
+        body: 'Absolutely! Guests simply scan your unique QR code to access your wedding hub via a mobile browser—no app download required. They can easily view event details, share photos, contribute gifts and more with just a few taps.' 
     },
     { 
         id: 3, 
         title: 'Can I customize the trivia questions and love story on GatherGram?', 
-        body: 'Absolutely! At GatherGram, we want to make every detail as unique as your story. You can fully customize the trivia questions and love story section to reflect your journey as a couple. Simply access the customization settings, and you’ll be able to edit or add questions that showcase fun facts, shared memories, or inside jokes. The love story section is also designed for personalization, so you can share your story in your own words. This way, your friends and family can enjoy an experience that’s truly personal and meaningful to you both!' 
+        body: 'Yes! We encourage personalisation to make your celebration truly yours. GatherGram’s trivia and love story builder are fully customisable, and with our AI assistance, you can create unique, heartwarming content tailored to your relationship and story.' 
     },
     { 
         id: 4, 
         title: 'What happens to our photos and videos after the wedding?', 
-        body: 'After your wedding, we carefully review, edit, and enhance all of your photos and videos to ensure they reflect the special moments and emotions of your day. Once editing is complete, we deliver the final high-resolution images and videos to you in a private, secure online gallery where you can download, share, and even order prints. Your photos and videos will be available to you for a lifetime, and we also keep secure backups, so your memories are safe with us. You’ll be able to relive your wedding day whenever you like!' 
+        body: 'All photos and videos shared through GatherGram are securely stored and accessible after the event. You and your guests can continue to view, download, and enjoy these memories, and if you’re on our Luminary Package, you’ll even receive  a personalized digital photo album for easy sharing.  ' 
     },
 ]

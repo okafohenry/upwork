@@ -12,7 +12,7 @@ export default function Accordion({ id, title, body, isOpen, setIsOpen }) {
         </div>
         {isOpen.status && isOpen.id === id ? 
         <div className='lg:ml-[4.59rem] ml-[3.5rem] pb-2 mt-2 transition ease-in duration-300'>
-            <p className='lg:text-[16px] text-[14px] text-[#0D0D0D]'>{body}</p>
+            <p className='lg:text-[20px] text-[14px] text-[#0D0D0D]'>{body}</p>
         </div> 
         : null}
     </div>

@@ -42,10 +42,10 @@ export default function Footer() {
                 <p className='font-bold text-[18px]'>Platform</p>
               </li>
               <li className='text-[#fafafa] text-opacity-60'>
-                <Link href="/">Home</Link>
+                <Link href="#home">Home</Link>
               </li>
               <li className='text-[#fafafa] text-opacity-60'>
-                <Link href="/get-started">Register</Link>
+                <Link href="#access">Register</Link>
               </li>
               <li className='text-[#fafafa] text-opacity-60'>
                 <Link href="#gallery">Features</Link>

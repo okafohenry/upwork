@@ -14,6 +14,19 @@ module.exports = {
         primaryLight: "var(--pink-light)",
         secondary: "var(--black)"
       },
+      rotate: {
+        40: '40deg', 
+      },
+      keyframes: {
+        curtainClose: {
+          '0%': { transform: 'scaleX(0)', boxShadow: '10px 0px 75px rgba(0, 0, 0, 0.5)' },
+          '100%': { transform: 'scaleX(1)' },
+        },
+      },
+      animation: {
+        'curtain-close': 'curtainClose 1s ease forwards',
+        'curtain-open': 'curtainClose 1s ease backwards', // 1s duration, ease-in effect
+      },
     },
   },
   plugins: [],
