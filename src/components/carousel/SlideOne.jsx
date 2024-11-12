@@ -19,9 +19,12 @@ export default function SlideOne({ activeTwo, activeThree }) {
   }, []);
 
     return (
-        <div className='grid lg:grid-cols-10 grid-cols-1 gap-x-5 h-[430px] mt-[6rem]'>
+        <div className='grid lg:grid-cols-10 grid-cols-1 gap-x-5 h-[430px] lg:mt-[6rem] mt-[2.5rem]'>
             <div className='lg:col-span-8 col-span-1 rounded-[50px] h-full bg-white shadow-xl py-[20px] lg:pl-[40px] pl-[20px] lg:pr-[5px] pr-[20px] origin-left transform scale-x-0 animate-curtain-close'>
-                <Image src={ai} alt='ai' />
+                <div className="flex items-center justify-between">
+                    <Image src={ai} alt='ai' /> 
+                    <Image src={robot} alt="robot" className="w-[26%] lg:hidden flex rotate-40" />
+                </div>
                 <div className="grid lg:grid-cols-6 grid-cols-1 gap-x-2 relative">
                     <div className="lg:col-span-4 col-span-1 relative z-10">
                         <h2 className={`text-primary lg:text-[40px] text-[27px] font-[600] transition-opacity duration-500 ${ isContentVisible ? 'opacity-100' : 'opacity-0'
@@ -38,7 +41,7 @@ export default function SlideOne({ activeTwo, activeThree }) {
                     <div className={`col-span-2 lg:flex hidden justify-center -mt-3 absolute right-9 transition-opacity duration-500 ${
                     isContentVisible ? 'opacity-100' : 'opacity-0'
                     } `}>
-                        <Image src={robot} alt="robot" className="w-[89%] rotate-40" />
+                        <Image src={robot} alt="robot" className="lg:w-[89%] rotate-40" />
                     </div>
                 </div>
             </div>

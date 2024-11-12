@@ -32,7 +32,7 @@ export default function FAQ() {
                 <p data-aos="fade-up" className="lg:text-[26px] text-[16px] text-center mt-5">Find quick answers to the most common questions</p>
             </div>
 
-            <div data-aos="fade-up" className="lg:w-[65%] w-[95%] mx-auto grid lg:gap-y-7 gap-y-3 lg:mt-[5.5rem] mt-[4rem]">
+            <div data-aos="fade-up" className="lg:w-[65%] w-[95%] mx-auto grid lg:gap-y-7 gap-y-3 lg:mt-[5.5rem] mt-[3rem]">
                 {faq.map(({id, title, body }) => (
                     <Accordion 
                     key={id} 
@@ -45,7 +45,7 @@ export default function FAQ() {
                 ))}
             </div>
 
-            <div data-aos="fade-up" className="lg:w-[32%] w-[90%] mx-auto mt-[6rem]">
+            <div data-aos="fade-up" className="lg:w-[32%] w-[90%] mx-auto lg:mt-[6rem] mt-[4rem]">
                 <button className="free-access-btn w-full lg:text-[16px] text-[14px] rounded-[50px] bg-primary py-[16px] text-center">View More FAQ’s</button>
             </div>
         </div>

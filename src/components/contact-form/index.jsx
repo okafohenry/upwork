@@ -15,21 +15,21 @@ const initialValues = {
 export default function ContactForm({ closeModal }) {
     const [ formData, setFormData ] = useState(initialValues)
 
-    const inputStyle = 'border-0 outline-none border-b-2 border-[#EB87AB] focus:border-b-primary px-2 py-1 w-full placeholder-[#EB87AB]'
+    const inputStyle = 'border-0 outline-none lg:border-b-2 border-b border-[#EB87AB] focus:border-b-primary px-2 py-1 w-full placeholder-[#EB87AB] lg:placeholder:text-md placeholder:text-sm'
 
     return (
         <div className='fixed z-[1020] backdrop-blur-sm w-full h-full top-0 left-0 bottom-0 bg-[#747474]/[0.1] backdrop-brightness-50'>
-            <div className='lg:w-[80%] w-[95%] m-auto bg-primaryLight rounded-[32px]  mt-[1.5rem] h-[95vh] grid lg:grid-cols-2 grid-cols-1 gap-x-5 lg:p-[2rem] p-[1.2rem] gap-y-7 relative'>
+            <div className='lg:w-[80%] w-full m-auto bg-primaryLight lg:rounded-[32px] rounded-[15px]  mt-[1.5rem] h-[95vh] grid lg:grid-cols-2 grid-cols-1 gap-x-5 lg:p-[2rem] p-[1.2rem] gap-y-7 relative overflow-y-auto'>
                 <div className='col-span-1'>
-                    <h4 className='text-[#EB87AB] lg:text-[28px] text-[20px] mb-5'>Let’s Connect and Get You Started</h4>
-                    <h2 className='text-primary lg:text-[60px] text-[35px] lg:leading-[60px]'>Simply share a few details with us</h2>
-                    <p className='text-[#EB87AB] lg:text-[20px] mt-7'>And we’ll personally reach out to guide you through all that GatherGram has to offer!</p>
-                    <p className='mt-10 flex items-center gap-5 text-primary'>
+                    <h4 className='text-[#EB87AB] lg:text-[28px] text-[20px] lg:mb-5 mb-2 lg:mt-0 mt-3'>Let’s Connect and Get You Started</h4>
+                    <h2 className='text-primary lg:text-[60px] text-[32px] lg:leading-[60px] leading-[40px]'>Simply share a few details with us</h2>
+                    <p className='text-[#EB87AB] lg:text-[20px] lg:mt-7 mt-4'>And we’ll personally reach out to guide you through all that GatherGram has to offer!</p>
+                    <p className='lg:mt-10 mt-5 flex items-center gap-5 text-primary'>
                         <FaEnvelope size={18} />
-                        <span className='text-[18px] underline'>info@gathergram.app</span>
+                        <span className='lg:text-[18px] text-[14px] underline'>info@gathergram.app</span>
                     </p>
                 </div>
-                <div className='col-span-1 h-full overflow-y-scroll bg-white rounded-[24px] lg:p-[2rem] p-[1.5rem]'>
+                <div className='col-span-1 h-full bg-white rounded-[24px] lg:p-[2rem] p-[1.5rem]'>
 
                     <FaTimesCircle 
                         className='text-primary absolute lg:top-5 top-0 cursor-pointer lg:right-6 right-0 z-50' 
@@ -49,14 +49,13 @@ export default function ContactForm({ closeModal }) {
                         ))}
                     </ul>
 
-                    <div className='grid gap-y-7 mt-7 text-[#EB87AB]'>
+                    <div className='grid lg:gap-y-10 gap-y-5 lg:mt-[5rem] mt-7 text-[#EB87AB]'>
                         <div className='w-full flex'>
                             <span className='text-[20px]'>*</span>
                             <input 
                                 type="text" 
                                 placeholder="Name" 
                                 className={`${inputStyle}`} 
-                                style={{ '::placeholder': { fontSize: '0.875rem' } }}
                                 onChange={(e) => setFormData({...formData, name: e.target.value })} 
                             />
                         </div>
@@ -93,7 +92,7 @@ export default function ContactForm({ closeModal }) {
                     </div>
 
                     <button 
-                    className="lg:text-[15px] text-[12px] lg:w-[35%] w-[50%] mt-[4rem] text-center bg-primary lg:py-[12px] py-[8px] lg:px-0 px-[13px] rounded-[50px]"
+                    className="lg:text-[15px] text-[12px] lg:w-[35%] w-[50%] lg:mt-[4rem] mt-[2rem] text-center bg-primary lg:py-[12px] py-[8px] lg:px-0 px-[13px] rounded-[50px]"
                     >
                         Submit
                     </button>

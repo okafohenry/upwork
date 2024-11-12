@@ -20,13 +20,16 @@ export default function SlideTwo({ activeOne, activeThree, prevIndex }) {
 
 
   return (
-    <div className='grid lg:grid-cols-10 grid-cols-1 gap-x-5 h-[430px] mt-[6rem]'>
+    <div className='grid lg:grid-cols-10 grid-cols-1 gap-x-5 h-[430px] lg:mt-[6rem] mt-[2.5rem]'>
         <div className='lg:flex hidden lg:col-span-1 rounded-[50px] h-full bg-white/[.3] items-start relative z-10 px-[20px] pt-[20px] '> 
             <Image src={ai} alt='ai' className='cursor-pointer' onClick={activeOne} />
         </div>
 
         <div className={`lg:col-span-8 col-span-1 rounded-[50px] h-full bg-white shadow-xl py-[20px] lg:pl-[40px] pl-[20px] lg:pr-[5px] pr-[20px] ${prevIndex === 1 ? 'origin-right' : 'origin-left'} transform scale-x-0 animate-curtain-close`}> {/** change origin based on current index */}
-            <Image src={scan} alt='scan' />
+            <div className="flex items-center justify-between">
+                <Image src={scan} alt='scan' />
+                <Image src={qrCode} alt="qr-code" className="w-[26%] lg:hidden flex rotate-40" />
+            </div>
             <div className="grid lg:grid-cols-6 grid-cols-1 gap-x-2 relative">
                 <div className="lg:col-span-4 col-span-1 relative z-10">
                     <h2 className={`text-primary lg:text-[40px] text-[27px] font-[600] transition-opacity duration-500 ${ isContentVisible ? 'opacity-100' : 'opacity-0'
@@ -40,7 +43,7 @@ export default function SlideTwo({ activeOne, activeThree, prevIndex }) {
                 </div>
                 <div className={`col-span-2 lg:flex hidden justify-center -mt-3 absolute right-9 transition-opacity duration-500 ${isContentVisible ? 'opacity-100' : 'opacity-0'
                     }`}>
-                    <Image src={qrCode} alt="robot" className="w-[89%] rotate-40" />
+                    <Image src={qrCode} alt="qr-code" className="w-[89%] rotate-40" />
                 </div>
             </div>
         </div>
