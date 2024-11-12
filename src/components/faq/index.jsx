@@ -45,9 +45,9 @@ export default function FAQ() {
                 ))}
             </div>
 
-            <div data-aos="fade-up" className="lg:w-[32%] w-[90%] mx-auto lg:mt-[6rem] mt-[4rem]">
+            {/* <div data-aos="fade-up" className="lg:w-[32%] w-[90%] mx-auto lg:mt-[6rem] mt-[4rem]">
                 <button className="free-access-btn w-full lg:text-[16px] text-[14px] rounded-[50px] bg-primary py-[16px] text-center">View More FAQ’s</button>
-            </div>
+            </div> */}
         </div>
     )
 }

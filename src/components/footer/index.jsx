@@ -16,7 +16,7 @@ export default function Footer() {
             <p className='text-[#fafafa] text-opacity-60'>Keep up to date with our latest news</p>
           </div>
           <div className='flex gap-2 items-center lg:w-[35%]'>
-            <input className='rounded-[50px] py-[10px] px-[20px] lg:w-[70%] text-[14px]' placeholder='Enter your email' type="text" />
+            <input className='rounded-[50px] py-[10px] px-[20px] lg:w-[70%] text-[14px] text-[#0d0d0d] outline-primaryLight' placeholder='Enter your email' type="email" />
             <div className='lg:w-[30%]'>
               <button className='rounded-[50px] py-[10px] lg:px-0 px-[20px] text-center w-full  bg-primary text-white text-[14px]'>Subscribe</button>
             </div>
