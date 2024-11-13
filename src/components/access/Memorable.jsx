@@ -6,7 +6,7 @@ import memorable from '../../../public/memorable.svg'
 
 export default function Memorable() {
     return (
-        <div data-aos="fade-in" className="lg:block hidden lg:w-auto w-[15%] absolute bottom-[6.5rem] lg:right-[12%] ">
+        <div data-aos="fade-in" className=" lg:w-auto w-[17%] absolute lg:bottom-[6.5rem] bottom-[19rem] lg:right-[12%] right-[15%]">
             <div className="relative left-[65%]">
                 <Image src={arrow} className="relative " />
                 <Image src={memorable} className="relative -right-[30%] top-4" />
