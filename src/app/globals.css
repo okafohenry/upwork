@@ -10,12 +10,18 @@
   --pink-light: #FFD6E4;
 }
 
+/* Force light mode regardless of device setting */
+:root {
+  color-scheme: light; /* Helps with form controls and default colors */
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: white;
+    color-scheme: light;
   }
+  /* Override styles here if needed */
 }
+
 
 @font-face {
   font-family: 'Maian';
