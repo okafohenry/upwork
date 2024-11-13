@@ -46,12 +46,12 @@ export default function SlideOne({ activeTwo, activeThree }) {
                 </div>
             </div>
 
-            <div className='lg:flex hidden lg:col-span-1 rounded-[50px] h-full bg-white/[.6] items-start px-[20px] pt-[20px]'>
-                <Image src={scan} alt='scan' className='cursor-pointer' onClick={activeTwo} />
+            <div onClick={activeTwo} className='lg:flex hidden lg:col-span-1 rounded-[50px] h-full bg-white/[.6] items-start px-[20px] pt-[20px]'>
+                <Image src={scan} alt='scan' className='cursor-pointer'  />
             </div>
 
-            <div className='lg:flex hidden lg:col-span-1 rounded-[50px] h-full bg-white/[.3] items-start px-[20px] pt-[20px]'>
-                <Image src={cheers} alt='cheers' className='cursor-pointer' onClick={activeThree} />
+            <div onClick={activeThree} className='lg:flex hidden lg:col-span-1 rounded-[50px] h-full bg-white/[.3] items-start px-[20px] pt-[20px]'>
+                <Image src={cheers} alt='cheers' className='cursor-pointer' />
             </div>
         </div>
     )

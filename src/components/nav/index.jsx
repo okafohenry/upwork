@@ -9,12 +9,12 @@ export default function Nav({ isModalOpen, closeModal, openModal }) {
     return (
         <>
             <nav className="w-full lg:h-[100px] lg:py-0 py-4 z-20 absolute top-0 bg-transparent backdrop-blur-sm">
-                <div className="mx-auto w-[90%]">
+                <div className="mx-auto w-full px-[50px]">
                     <div className="flex items-center justify-between">
                         <Link href='/'>
-                            <Image src={logo} alt="logo" className="lg:w-auto w-[50%] hover:cursor-pointer" />
+                            <Image src={logo} alt="logo" className="lg:w-auto w-[60%] hover:cursor-pointer" />
                         </Link>
-                        <ul className="lg:flex hidden items-center gap-x-5">
+                        <ul className="lg:flex hidden w-[40%] items-center gap-x-5 ">
                             <li>
                                 <Link href="#gallery" className="text-[17px] p-[10px]">Features</Link>
                             </li>
@@ -25,7 +25,7 @@ export default function Nav({ isModalOpen, closeModal, openModal }) {
                                 <Link href="#faq" className="text-[17px] p-[10px]">FAQs</Link>
                             </li>
                             <li>
-                                <Link href="#contact" className="text-[17px] p-[10px]">Contact</Link>
+                                <p className="text-[17px] p-[10px] cursor-pointer" onClick={openModal}>Contact</p>
                             </li>
                         </ul>
                         <button 

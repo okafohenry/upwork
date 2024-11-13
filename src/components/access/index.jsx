@@ -7,7 +7,7 @@ import TailoredForYou from "./Tailored";
 
 export default function Access({ openModal }) {
     return (
-        <div id="access" data-aos="fade-up" className="lg:w-auto w-[90%] lg:mx-0 mx-auto lg:pt-[10rem] pt-[7rem] lg:pb-[20rem] pb-[7rem] bg-white relative overflow-hidden">
+        <div id="access" data-aos="fade-up" className="lg:w-auto w-[95%] lg:mx-0 mx-auto lg:pt-[10rem] pt-[7rem] lg:pb-[20rem] pb-[7rem] bg-white relative overflow-hidden">
             <Joyful />
             <TailoredForYou />
             <HassleFree />
