@@ -3,25 +3,19 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #171717 ;
+  --foreground: #ffffff;
   --black: #0D0D0D;
   --pink: #D81159;
   --pink-light: #FFD6E4;
 }
 
-/* Force light mode regardless of device setting */
-:root {
-  color-scheme: light; /* Helps with form controls and default colors */
-}
-
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
-    color-scheme: light;
+    --background: #0a0a0a;
+    --foreground: white;
   }
-  /* Override styles here if needed */
-}
-
+} */
 
 @font-face {
   font-family: 'Maian';
