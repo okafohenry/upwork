@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import { IoClose } from 'react-icons/io5'
- close
+
 export default function Dropdown({ closeDropdown, isOpen }) {
   return (
     <div className='fixed overflow-hidden z-[1206] backdrop-blur-sm w-full h-full top-0 left-0 bottom-0 bg-[#747474]/[0.1] backdrop-brightness-50'>

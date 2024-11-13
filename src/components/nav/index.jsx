@@ -4,7 +4,7 @@ import logo from '../../../public/logo.svg';
 import Link from "next/link";
 import { useState } from "react";
 import ContactForm from "../contact-form";
-import { IoClose, IoMenu } from "react-icons/io5";
+import { IoMenu } from "react-icons/io5";
 import Dropdown from "./Dropdown";
 
 export default function Nav({ isModalOpen, closeModal, openModal }) {
