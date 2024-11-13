@@ -3,19 +3,19 @@
 @tailwind utilities;
 
 :root {
-  --background: #171717 ;
-  --foreground: #ffffff;
+  --background:  #ffffff;
+  --foreground: #171717;
   --black: #0D0D0D;
   --pink: #D81159;
   --pink-light: #FFD6E4;
 }
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: white;
   }
-} */
+}
 
 @font-face {
   font-family: 'Maian';

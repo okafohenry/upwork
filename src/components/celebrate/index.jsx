@@ -1,11 +1,3 @@
-import Image from "next/image";
-import img1 from '../../../public/cs-1.png';
-import robot from '../../../public/robot.png';
-import card from '../../../public/card.png';
-import card2 from '../../../public/card-2.png';
-import SlideOne from "../carousel/SlideOne";
-import SlideTwo from "../carousel/SlideTwo";
-import SlideThree from "../carousel/SlideThree";
 import Carousel from "../carousel";
 
 export default function Celebrate(){

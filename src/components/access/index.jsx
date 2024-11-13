@@ -17,8 +17,8 @@ export default function Access({ openModal }) {
                 <h2 className="lg:text-[75px] text-[#0D0D0D] text-[45px] font-[500] text-center lg:leading-[100px] leading-[60px]">
                     Be Part of the Experience With <span className="text-primary">Our Exclusive Free Access!</span>
                 </h2>
-                <p className="w-[90%] mx-auto lg:text-[30px] text-center text-[20px] mt-8 text-[#0D0D0D]">Join GatherGram’s exclusive Free Access and explore everything our platform has to offer</p>
-                <div className="lg:w-[40%] w-[80%] mx-auto lg:mt-[6rem] mt-[4.5rem]">
+                <p className="w-[90%] mx-auto lg:text-[30px] text-center text-[20px] mt-8 text-[#0D0D0D] relative z-10">Join GatherGram’s exclusive Free Access and explore everything our platform has to offer</p>
+                <div className="lg:w-[40%] w-[80%] mx-auto lg:mt-[6rem] mt-[4.5rem] relative z-10">
                     <button onClick={openModal} className="free-access-btn w-full mx-auto  lg:text-[18px] text-[16px] rounded-[50px] bg-primary py-[16px] text-center">
                         Register for Free Access
                     </button>

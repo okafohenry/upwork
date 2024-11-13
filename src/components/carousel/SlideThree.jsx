@@ -19,12 +19,12 @@ export default function SlideThree({ activeOne, activeTwo }) {
 
   return (
     <div className='grid lg:grid-cols-10 grid-cols-1 gap-x-5 h-[430px] lg:mt-[6rem] mt-[2.5rem] '>
-        <div className='lg:flex hidden lg:col-span-1 rounded-[50px] h-full bg-white/[.3] items-start relative z-10 px-[20px] pt-[20px]'>
-            <Image src={ai} alt='ai' className='cursor-pointer' onClick={activeOne} />
+        <div onClick={activeOne} className='lg:flex hidden cursor-pointer lg:col-span-1 rounded-[50px] h-full bg-white/[.3] items-start relative z-10 px-[20px] pt-[20px]'>
+            <Image src={ai} alt='ai' className='cursor-pointer' />
         </div>
 
-        <div className='lg:flex hidden lg:col-span-1 rounded-[50px] h-full bg-white/[.6] items-start px-[20px] pt-[20px]'>
-            <Image src={scan} alt='scan' className='cursor-pointer' onClick={activeTwo} />
+        <div onClick={activeTwo} className='lg:flex cursor-pointer hidden lg:col-span-1 rounded-[50px] h-full bg-white/[.6] items-start px-[20px] pt-[20px]'>
+            <Image src={scan} alt='scan' className=''  />
         </div>
 
         <div className='lg:col-span-8 col-span-1 rounded-[50px] h-full bg-white shadow-xl py-[20px] lg:pl-[40px] pl-[20px] lg:pr-[5px] pr-[20px] origin-right transform scale-x-0 animate-curtain-close'>

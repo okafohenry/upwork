@@ -40,17 +40,17 @@ export default function SlideOne({ activeTwo, activeThree }) {
                     </div>
                     <div className={`col-span-2 lg:flex hidden justify-center -mt-3 absolute right-9 transition-opacity duration-500 ${
                     isContentVisible ? 'opacity-100' : 'opacity-0'
-                    } `}>
+                    }`}>
                         <Image src={robot} alt="robot" className="lg:w-[89%] rotate-40" />
                     </div>
                 </div>
             </div>
 
-            <div onClick={activeTwo} className='lg:flex hidden lg:col-span-1 rounded-[50px] h-full bg-white/[.6] items-start px-[20px] pt-[20px]'>
+            <div onClick={activeTwo} className='lg:flex hidden cursor-pointer lg:col-span-1 rounded-[50px] h-full bg-white/[.6] items-start px-[20px] pt-[20px]'>
                 <Image src={scan} alt='scan' className='cursor-pointer'  />
             </div>
 
-            <div onClick={activeThree} className='lg:flex hidden lg:col-span-1 rounded-[50px] h-full bg-white/[.3] items-start px-[20px] pt-[20px]'>
+            <div onClick={activeThree} className='lg:flex hidden cursor-pointer lg:col-span-1 rounded-[50px] h-full bg-white/[.3] items-start px-[20px] pt-[20px]'>
                 <Image src={cheers} alt='cheers' className='cursor-pointer' />
             </div>
         </div>
