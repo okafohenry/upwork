@@ -93,44 +93,44 @@ p, ul>li>a, .copyright, button {
 }
 
 .bg-1 {
-  background-image: url('/bg1.jpeg');
+  background-image: url('/bg1.png');
   background-size: cover;     
   background-position: center; 
   background-repeat: no-repeat; 
 }
 
 .bg-2 {
-  background-image: url('/bg2.jpeg');
+  background-image: url('/bg2.png');
   background-size: cover;     
   background-position: center; 
   background-repeat: no-repeat; 
 }
 .bg-3 {
-  background-image: url('/bg3.jpeg');
+  background-image: url('/bg3.png');
   background-size: cover;     
   background-position: center; 
   background-repeat: no-repeat; 
 }
 .bg-4 {
-  background-image: url('/bg4.jpeg');
+  background-image: url('/bg4.png');
   background-size: cover;     
   background-position: center; 
   background-repeat: no-repeat; 
 }
 .bg-5 {
-  background-image: url('/bg5.jpeg');
+  background-image: url('/bg5.png');
   background-size: cover;     
   background-position: center; 
   background-repeat: no-repeat; 
 }
 .bg-6 {
-  background-image: url('/bg6.jpeg');
+  background-image: url('/bg6.png');
   background-size: cover;     
   background-position: center; 
   background-repeat: no-repeat; 
 }
 .bg-7 {
-  background-image: url('/bg7.jpeg');
+  background-image: url('/bg7.png');
   background-size: cover;     
   background-position: center; 
   background-repeat: no-repeat; 
