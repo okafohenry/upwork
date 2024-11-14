@@ -18,14 +18,14 @@ export default function Gallery() {
     const absoluteBottom = 'absolute bottom-10 lg:text-[25px] text-[18px] ml-10 font-[400] text-white/[.8]'
 
     return (
-        <div id="gallery" data-aos="fade-down" className="bg-[#FAFAFA] lg:py-[160px] py-[100px] relative overflow-hidden">
+        <div id="gallery" data-aos="fade-down" className="bg-[#FFE5E3] lg:py-[160px] py-[100px] relative overflow-hidden">
             <Image src={anim1} alt="anim1" className='absolute bottom-[9%] right-0 z-10 lg:w-auto w-[20%] animate-bounce' />
-            <Image src={anim2} alt="anim2" className='absolute top-[13%] lg:-left-10 z-10 lg:w-auto w-[20%] animate-bounce' />
-            <Image src={anim3} alt="anim3" className='absolute top-[60%] lg:-left-[3rem] z-10 lg:w-auto w-[20%] animate-pulse' />
-            <div className="w-[90%] mx-auto">
-                <h1 className="lg:w-[65%] mx-auto lg:text-[75px] text-[45px] font-[600] text-center lg:leading-[100px] leading-[60px] text-[#0D0D0D]">Designed with You and Your Guests <span className="text-primary">in Mind</span></h1>
-                <p className="lg:w-[65%] mx-auto lg:text-[30px] text-center text-[20px] mt-8  text-[#0D0D0D]">Explore the features that will bring your big day to life, making your wedding celebration unforgettable</p>
-                <div className="grid lg:grid-cols-2 grid-cols-1 gap-5 mt-[4.5rem]">
+            <Image src={anim2} alt="anim2" className='absolute top-[15%] lg:-left-5 z-10 lg:w-auto w-[20%] animate-bounce' />
+            <Image src={anim3} alt="anim3" className='absolute top-[25%] -right-10 z-10 lg:w-auto w-[20%] animate-pulse' />
+            <div className="w-[85%] mx-auto">
+                <h1 className=" mx-auto lg:text-[65px] text-[#4F0D25]/[.9] text-[45px] font-[500] text-center lg:leading-[75px] tracking-normal leading-[60px]">Designed with You and Your<br className="lg:block hidden" /> Guests <span className="text-primary">in Mind</span></h1>
+                <p className="lg:text-[27px] text-center text-[20px] mt-8 text-[#4F0D25]/[.9] tracking-[2%]">Explore the features that will bring your big day to life, making<br className="lg:block hidden" /> your wedding celebration unforgettable</p>
+                <div className="grid lg:grid-cols-2 grid-cols-1 gap-5 mt-[6rem]">
                     <div className="col-span-1 grid gap-y-5">
                         <div className={`lg:h-[750px] h-[350px] ${cardStyle} bg-1 relative overflow-hidden group`}>
                             <h3 className={`${absoluteTop}`}>Capture Every Precious Moment</h3>

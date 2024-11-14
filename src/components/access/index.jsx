@@ -7,18 +7,18 @@ import TailoredForYou from "./Tailored";
 
 export default function Access({ openModal }) {
     return (
-        <div id="access" data-aos="fade-up" className="lg:w-auto lg:mx-0 mx-auto lg:pt-[10rem] pt-[7rem] lg:pb-[20rem] pb-[7rem] bg-white relative overflow-hidden">
+        <div id="access" data-aos="fade-up" className="lg:w-[95%] lg:mx-0 mx-auto lg:pt-[10rem] pt-[7rem] lg:pb-[25rem] pb-[7rem] bg-white relative">
             <Joyful />
             <TailoredForYou />
             <HassleFree />
             <Memorable />
             <Effortless />
-            <div className="lg:w-[65%] mx-auto">
-                <h2 className="lg:text-[75px] text-[#0D0D0D] text-[45px] font-[500] text-center lg:leading-[100px] leading-[60px]">
-                    Be Part of the Experience With <span className="text-primary">Our Exclusive Free Access!</span>
+            <div className="">
+                <h2 className="lg:text-[65px] text-[#4F0D25]/[.9] text-[45px] font-[500] text-center lg:leading-[75px] tracking-normal leading-[60px]">
+                    Be Part of the Experience With<br className="lg:block hidden" /> <span className="text-primary">Our Exclusive Free Access!</span>
                 </h2>
-                <p className="w-[90%] mx-auto lg:text-[30px] text-center text-[20px] mt-8 text-[#0D0D0D] relative z-10">Join GatherGram’s exclusive Free Access and explore everything our platform has to offer</p>
-                <div className="lg:w-[40%] w-[80%] mx-auto lg:mt-[6rem] mt-[4.5rem] relative z-10">
+                <p className=" lg:text-[27px] text-center text-[20px] mt-8 text-[#4F0D25]/[.9]">Join GatherGram’s exclusive Free Access and explore everything<br className="lg:block hidden" /> our platform has to offer</p>
+                <div className="lg:w-[22%] w-[80%] mx-auto lg:mt-[7rem] mt-[4.5rem] relative z-10">
                     <button onClick={openModal} className="free-access-btn w-full mx-auto  lg:text-[18px] text-[16px] rounded-[50px] bg-primary py-[16px] text-center">
                         Register for Free Access
                     </button>

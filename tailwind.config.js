@@ -10,9 +10,13 @@ module.exports = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        primary: "var(--pink)",
+        primary: "#ED266F",
         primaryLight: "var(--pink-light)",
-        secondary: "var(--black)"
+        secondary: "#4F0D25"
+      },
+      size: {
+        headerXl: "100px",
+        headerLg: "80px",
       },
       rotate: {
         40: '40deg', 

@@ -6,10 +6,10 @@ import joyful from '../../../public/joyful.svg'
 
 export default function Joyful() {
     return (
-        <div data-aos="fade-in" className="lg:w-auto w-[20%] absolute lg:-left-[5rem] -left-[2rem] lg:-mt-[2.5rem] -mt-[5rem]">
+        <div data-aos="fade-in" className=" absolute lg:-left-[2rem] -left-[2rem] lg:-mt-[2.5rem] -mt-[5rem]">
             <Image src={arrow} className="relative lg:-top-4 -top-2 lg:-right-[13rem] -right-[5rem]" />
-            <Image src={joyful} className="relative lg:-top-3 lg:-right-[7.5rem] -right-[2rem] -top-1" />
-            <Image src={roundImg} className="" />
+            <Image src={joyful} className="relative lg:-top-3 lg:-right-[8.5rem] -right-[rem] -top-1" />
+            <Image src={roundImg} className="h-[200px] w-[200px] relative -top-2 left-8" />
         </div>
     )
 }

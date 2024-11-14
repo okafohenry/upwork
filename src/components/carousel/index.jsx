@@ -1,4 +1,5 @@
 
+"use client"
 import React, { useState, useEffect } from 'react';
 import SlideOne from './SlideOne';
 import SlideTwo from './SlideTwo';
@@ -26,26 +27,27 @@ const Carousel = ({ autoPlay = false, delay = 3000 }) => {
   // Track screen width and set up interval if width <= 900px
   useEffect(() => {
     // Only proceed if window is defined
-    // if (typeof window === "undefined") return null;
-
-    const handleResize = () => setScreenWidth(window.innerWidth);
-
-    // Listen for screen resize
-    window.addEventListener('resize', handleResize);
-
-    // Set up interval if screen width is 900px or less
-    let interval;
-    if (screenWidth <= 900) {
-      interval = setInterval(() => {
-        nextSlide();
-      }, 10000); // 10 seconds
-    }
-
-    // Clean up on component unmount or when screen width changes
-    return () => {
-      window.removeEventListener('resize', handleResize);
-      if (interval) clearInterval(interval);
+    if (typeof window !== "undefined"){
+      const handleResize = () => setScreenWidth(window.innerWidth);
+  
+      // Listen for screen resize
+      window.addEventListener('resize', handleResize);
+  
+      // Set up interval if screen width is 900px or less
+      let interval;
+      if (screenWidth <= 900) {
+        interval = setInterval(() => {
+          nextSlide();
+        }, 10000); // 10 seconds
+      }
+  
+      // Clean up on component unmount or when screen width changes
+      return () => {
+        window.removeEventListener('resize', handleResize);
+        if (interval) clearInterval(interval);
+      };
     };
+
   }, [screenWidth, currentIndex]);
 
   // Set up automatic slide transition if autoPlay is true
