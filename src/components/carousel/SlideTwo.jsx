@@ -25,7 +25,7 @@ export default function SlideTwo({ activeOne, activeThree, prevIndex }) {
             <Image src={ai} alt='ai' className='cursor-pointer'  />
         </div>
 
-        <div className={`lg:col-span-8 col-span-1 rounded-[50px] h-full bg-white shadow-xl py-[20px] lg:pl-[40px] pl-[20px] lg:pr-[5px] pr-[20px] ${prevIndex === 1 ? 'origin-right' : 'origin-left'} transform scale-x-0 animate-curtain-close`}> {/** change origin based on current index */}
+        <div className={`lg:col-span-8 col-span-1 rounded-[50px] h-full bg-white shadow-xl py-[20px] lg:pl-[40px] pl-[20px] lg:pr-[5px] pr-[20px] overflow-hidden ${prevIndex === 1 ? 'origin-right' : 'origin-left'} transform scale-x-0 animate-curtain-close`}> {/** change origin based on current index */}
             <div className="flex items-center justify-between">
                 <Image src={scan} alt='scan' />
                 <Image src={qrCode} alt="qr-code" className="w-[26%] lg:hidden flex rotate-40" />

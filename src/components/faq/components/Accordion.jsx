@@ -10,7 +10,11 @@ export default function Accordion({ id, title, body, isOpen, setIsOpen }) {
             <Image 
             src={isOpen.status && isOpen.id === id ? openIcon : closeIcon } 
             alt="dropdown-icon" 
-            className={`transform transition-transform duration-300 `} />
+            className={`transform transition-transform duration-300 `} 
+            style={{
+              transform: isOpen.status && isOpen.id === id ? 'rotate(360deg)' : 'rotate(0deg)',
+            }}
+            />
             <h4 className='text-[#0D0D0D] lg:text-[25px] text-[16px] hover:cursor-pointer' onClick={setIsOpen}>{title}</h4>
         </div>
         {isOpen.status && isOpen.id === id ? 

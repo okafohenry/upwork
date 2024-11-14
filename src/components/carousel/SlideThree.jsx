@@ -27,7 +27,7 @@ export default function SlideThree({ activeOne, activeTwo }) {
             <Image src={scan} alt='scan' className=''  />
         </div>
 
-        <div className='lg:col-span-8 col-span-1 rounded-[50px] h-full bg-white shadow-xl py-[20px] lg:pl-[40px] pl-[20px] lg:pr-[5px] pr-[20px] origin-right transform scale-x-0 animate-curtain-close'>
+        <div className='lg:col-span-8 col-span-1 rounded-[50px] h-full bg-white shadow-xl py-[20px] lg:pl-[40px] pl-[20px] lg:pr-[5px] pr-[20px] origin-right transform scale-x-0 animate-curtain-close overflow-hidden'>
             <div className="flex items-center justify-between">
                 <Image src={cheers} alt='cheers' />
                 <Image src={cheersGif} alt="cheers-gif" className="w-[26%] lg:hidden flex rotate-40" />

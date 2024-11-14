@@ -26,7 +26,7 @@ const Carousel = ({ autoPlay = false, delay = 3000 }) => {
   // Track screen width and set up interval if width <= 900px
   useEffect(() => {
     // Only proceed if window is defined
-    if (typeof window === "undefined") return;
+    // if (typeof window === "undefined") return null;
 
     const handleResize = () => setScreenWidth(window.innerWidth);
 
