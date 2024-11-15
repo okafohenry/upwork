@@ -59,7 +59,7 @@ p, ul>li>a, .copyright, button {
   width: 100%;
   height: 100vh;
 
-  background-image: url('/get-started.png');
+  background-image: url('/get-started.png') !important;
   background-size: cover;     
   background-position: center; 
   background-repeat: no-repeat; 
@@ -72,15 +72,6 @@ p, ul>li>a, .copyright, button {
   background-repeat: no-repeat; 
 }
 
-.celebrate-bg {
-  width: 100%;
-
-  background-image: url('/celebrate2.png') !important;
-  background-size: cover;     
-  background-position: center; 
-  background-repeat: no-repeat; 
-  background-color: var(--primary-50, rgb(233, 140, 174));
-}
 
 .hero-bg {
   width: 100%;
