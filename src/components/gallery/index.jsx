@@ -20,8 +20,8 @@ export default function Gallery() {
             <Image src={anim3} alt="anim3" className='absolute top-[25%] -right-10 z-10 lg:w-auto w-[20%] animate-pulse' />
             <Image src={anim4} alt="anim4" className='absolute top-[52.7%] lg:left-0 z-10 lg:w-auto w-[20%] animate-pulse' />
             <div className="w-[85%] mx-auto">
-                <h1 className="mx-auto lg:text-[65px] text-[#4F0D25]/[.9] text-[45px] font-[500] text-center lg:leading-[75px] tracking-normal leading-[60px]">Designed with You and Your<br className="lg:block hidden" /> Guests <span className="text-[#FD7E72]">in Mind</span></h1>
-                <p className="lg:text-[27px] text-center text-[20px] mt-8 text-[#4F0D25]/[.9] tracking-[2%]">Explore the features that will bring your big day to life, making<br className="lg:block hidden" /> your wedding celebration unforgettable</p>
+                <h1 className="mx-auto lg:text-[65px] text-[#4F0D25]/[.9] text-[32px] font-[500] text-center lg:leading-[75px] tracking-normal leading-[40px]">Designed with You and Your<br className="lg:block hidden" /> Guests <span className="text-[#FD7E72]">in Mind</span></h1>
+                <p className="lg:text-[27px] text-center text-[16px] mt-8 text-[#4F0D25]/[.9] tracking-[2%]">Explore the features that will bring your big day to life, making<br className="lg:block hidden" /> your wedding celebration unforgettable</p>
                 <div className="grid lg:grid-cols-2 grid-cols-1 gap-5 mt-[6rem]">
                     <div className="col-span-1 grid gap-y-5">
                         <DisplayOne />
