@@ -22,14 +22,14 @@ export default function FAQ() {
     }
 
     return (
-        <div id="faq" className="bg-[#FFD6E4]/[.5] faq-bg lg:py-[160px] py-[100px] relative">
-            <Image src={svg1} alt="svg1" className="lg:w-auto w-[20%] absolute right-0 top-0" />
-            <Image src={svg2} alt="svg2" className="lg:w-auto w-[20%] absolute right-[17%] top-[15rem]" />
+        <div id="faq" className="bg-white lg:py-[160px] py-[120px] relative overflow-hidden">
+            <Image src={svg1} alt="svg1" className="lg:w-auto w-[20%] absolute -right-[2%] scale-75 -top-[4rem]" />
+            <Image src={svg2} alt="svg2" className="lg:w-auto w-[20%] absolute right-[11%] top-[15rem]" />
             <Image src={svg3} alt="svg3" className="lg:w-auto w-[20%] absolute left-10 top-10" />
             <div className="lg:w-[70%] w-[90%] mx-auto text-center text-[#0D0D0D]">
-                <h1 data-aos="fade-up" className="lg:text-[65px] text-[40px] font-[600] lg:leading-[94px] leading-[50px]">Got Questions?</h1>
-                <h1 data-aos="fade-up" className="lg:text-[65px] text-[40px] font-[600] lg:leading-[94px] leading-[50px]">We've Got <span className="text-primary">Answers</span></h1>
-                <p data-aos="fade-up" className="lg:text-[26px] text-[16px] text-center mt-5">Find quick answers to the most common questions</p>
+                <h1 data-aos="fade-up" className="lg:text-[65px] relative top-9 text-[#4F0D25]/[.9] text-[45px] font-[500] text-center lg:leading-[75px] tracking-wide leading-[60px]">Got Questions?</h1>
+                <h1 data-aos="fade-up" className="lg:text-[65px] relative top-9 text-[#4F0D25]/[.9] text-[45px] font-[500] text-center lg:leading-[75px] tracking-wide leading-[60px]">We've Got <span className="text-primary">Answers</span></h1>
+                <p data-aos="fade-up" className="lg:text-[27px] text-center text-[20px] mt-[4rem] text-[#4F0D25]/[.9] tracking-[2%]">Find quick answers to the most common questions</p>
             </div>
 
             <div data-aos="fade-up" className="lg:w-[65%] w-[95%] mx-auto grid lg:gap-y-7 gap-y-3 lg:mt-[5.5rem] mt-[3rem]">
