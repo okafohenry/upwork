@@ -57,7 +57,7 @@ p, ul>li>a, .copyright, button {
 
 .get-started-bg {
   width: 100%;
-  height: 100vh;
+  height: 115vh;
 
   background-image: url('/get-started.png') !important;
   background-size: cover;     
