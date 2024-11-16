@@ -65,7 +65,7 @@ export default function Gallery() {
     const carouselRef = React.useRef(null);
 
     return (
-        <div id="gallery" data-aos="fade-down" className="bg-[#FFE5E3] lg:py-[160px] py-[100px] relative overflow-hidden">
+        <div id="gallery" data-aos="fade-down" className="bg-[#FFE5E3] lg:pt-[160px] lg:pb-[160px] pt-[100px] pb-[50px] relative overflow-hidden">
             <Image src={anim1} alt="anim1" className='absolute lg:block hidden bottom-[9%] right-0 z-10 lg:w-auto w-[20%] animate-bounce' />
             <Image src={anim2} alt="anim2" className='absolute lg:block hidden top-[15%] lg:-left-5 z-10 lg:w-auto w-[20%] animate-bounce' />
             <Image src={anim3} alt="anim3" className='absolute lg:block hidden top-[25%] -right-10 z-10 lg:w-auto w-[20%] animate-pulse' />

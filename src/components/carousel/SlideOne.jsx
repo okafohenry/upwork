@@ -20,28 +20,27 @@ export default function SlideOne({ activeTwo, activeThree }) {
 
     return (
         <div className='grid lg:grid-cols-10 grid-cols-1 gap-x-5 h-[430px] lg:mt-[6rem] mt-[2.5rem]'>
-            <div className='lg:col-span-8 col-span-1 rounded-[50px] h-full bg-white shadow-xl py-[20px] lg:pl-[40px] pl-[20px] lg:pr-[5px] pr-[20px] origin-left transform scale-x-0 animate-curtain-close overflow-hidden'>
+            <div className='lg:col-span-8 col-span-1 lg:rounded-[50px] rounded-[24px] h-full bg-white shadow-xl py-[20px] lg:pl-[40px] pl-[20px] lg:pr-[5px] pr-[20px] origin-left transform scale-x-0 animate-curtain-close overflow-hidden'>
                 <div className="flex items-center justify-between">
-                    <Image src={ai} alt='ai' /> 
-                    <Image src={robot} alt="robot" className="w-[26%] lg:hidden flex rotate-40" />
+                    <Image src={ai} alt='ai' className='lg:w-auto w-[12%]' /> 
                 </div>
                 <div className="grid lg:grid-cols-6 grid-cols-1 gap-x-2 relative">
-                    <div className="lg:col-span-4 col-span-1 relative z-10">
-                        <h2 className={`text-primary lg:text-[40px] text-[27px] font-[600] transition-opacity duration-500 ${ isContentVisible ? 'opacity-100' : 'opacity-0'
+                    <div className="lg:col-span-4 col-span-1 lg:order-1 order-2 relative z-10">
+                        <h2 className={`text-primary lg:text-[40px] text-[24px] font-[600] transition-opacity duration-500 ${ isContentVisible ? 'opacity-100' : 'opacity-0'
                         }`}>
                             Create Your Celebration Hub
                         </h2>
-                        <p className={`lg:text-[21px] text-[14px] text-[#0D0D0D] mt-5 transition-opacity duration-500 ${ isContentVisible ? 'opacity-100' : 'opacity-0'
+                        <p className={`lg:text-[21px] text-[15px] text-[#4F0D25] mt-5 transition-opacity duration-500 ${ isContentVisible ? 'opacity-100' : 'opacity-0'
                         }`}>
                         Start by signing up and setting up your wedding day details. <br /><br />
 
                         Easily fill in everything—from your event itinerary and trivia questions <br /> to your gift list and love story, with AI assistance making it even easier to share your journey!
                         </p>
                     </div>
-                    <div className={`col-span-2 lg:flex hidden justify-center -mt-3 absolute right-9 transition-opacity duration-500 ${
+                    <div className={`col-span-2 lg:order-2 order-1 flex justify-center lg:-mt-3 -mt-6 lg:absolute right-9 transition-opacity duration-500 ${
                     isContentVisible ? 'opacity-100' : 'opacity-0'
                     }`}>
-                        <Image src={robot} alt="robot" className="lg:w-[89%] rotate-40" />
+                        <Image src={robot} alt="robot" className="lg:w-[89%] w-[45%] lg:rotate-40" />
                     </div>
                 </div>
             </div>

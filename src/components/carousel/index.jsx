@@ -59,7 +59,7 @@ const Carousel = ({ autoPlay = false, delay = 3000 }) => {
   }, [currentIndex, autoPlay, delay]);
 
   return (
-    <div>
+    <div className='lg:w-auto w-[95%] mx-auto'>
       {currentIndex === 1 && 
       <SlideOne 
         activeTwo={setActiveTwo}

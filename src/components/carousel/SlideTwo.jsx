@@ -25,25 +25,24 @@ export default function SlideTwo({ activeOne, activeThree, prevIndex }) {
             <Image src={ai} alt='ai' className='cursor-pointer'  />
         </div>
 
-        <div className={`lg:col-span-8 col-span-1 rounded-[50px] h-full bg-white shadow-xl py-[20px] lg:pl-[40px] pl-[20px] lg:pr-[5px] pr-[20px] overflow-hidden ${prevIndex === 1 ? 'origin-right' : 'origin-left'} transform scale-x-0 animate-curtain-close`}> {/** change origin based on current index */}
+        <div className={`lg:col-span-8 col-span-1 lg:rounded-[50px] rounded-[24px] h-full bg-white shadow-md shadow-[#00000040] py-[20px] lg:pl-[40px] pl-[20px] lg:pr-[5px] pr-[20px] overflow-hidden ${prevIndex === 1 ? 'origin-right' : 'origin-left'} transform scale-x-0 animate-curtain-close`}> {/** change origin based on current index */}
             <div className="flex items-center justify-between">
-                <Image src={scan} alt='scan' />
-                <Image src={qrCode} alt="qr-code" className="w-[26%] lg:hidden flex rotate-40" />
+                <Image src={scan} alt='scan' className='lg:w-auto w-[12%]'  />
             </div>
             <div className="grid lg:grid-cols-6 grid-cols-1 gap-x-2 relative">
-                <div className="lg:col-span-4 col-span-1 relative z-10">
-                    <h2 className={`text-primary lg:text-[40px] text-[27px] font-[600] transition-opacity duration-500 ${ isContentVisible ? 'opacity-100' : 'opacity-0'
+                <div className="lg:col-span-4 col-span-1 lg:order-1 order-2 relative z-10">
+                    <h2 className={`text-primary lg:text-[40px] font-[600] text-[24px] transition-opacity duration-500 ${ isContentVisible ? 'opacity-100' : 'opacity-0'
                         }`}>Share with a Single QR Code</h2>
-                    <p className={`lg:text-[21px] text-[14px] text-[#0D0D0D] mt-5 transition-opacity duration-500 ${ isContentVisible ? 'opacity-100' : 'opacity-0'
+                    <p className={`lg:text-[21px] text-[15px] text-[#4F0D25] mt-5 transition-opacity duration-500 ${ isContentVisible ? 'opacity-100' : 'opacity-0'
                         }`}>
                     Once your hub is complete, receive a unique, shareable QR code and guest list link. <br /><br />
 
                     Simply send it to your guests, who can quickly register with just their <br /> phone number to access everything your celebration offers.
                     </p>
                 </div>
-                <div className={`col-span-2 lg:flex hidden justify-center -mt-3 absolute right-9 transition-opacity duration-500 ${isContentVisible ? 'opacity-100' : 'opacity-0'
+                <div className={`col-span-2 flex lg:order-2 order-1 justify-center lg:-mt-3 -mt-6 lg:absolute right-9 transition-opacity duration-500 ${isContentVisible ? 'opacity-100' : 'opacity-0'
                     }`}>
-                    <Image src={qrCode} alt="qr-code" className="w-[89%] rotate-40" />
+                    <Image src={qrCode} alt="qr-code" className="lg:w-[89%] w-[45%] lg:rotate-40" />
                 </div>
             </div>
         </div>
