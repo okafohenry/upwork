@@ -11,7 +11,7 @@ export default function Celebrate(){
         <div className="lg:h-[142vh] h-[100vh] bg-[#FFE5E3] lg:pt-[8rem] pt-[2rem] overflow-hidden relative" id="how-it-works">
             <Image src={sparkle} alt="circle-bg" className="absolute lg:block hidden top-0 animate-pulse" />
             <Image src={comet} alt="circle-bg" className="absolute lg:block hidden right-0 top-[25%] animate-bounce z-10" />
-            <Image src={bigCircle} alt="circle-bg" className="absolute -left-[5%] scale-90 bottom-0" />
+            <Image src={bigCircle} alt="circle-bg" className="absolute lg:-left-[5%] -left-[15%] lg:scale-90 scale-[70%] lg:bottom-0 -bottom-[3rem]" />
             <Image src={bigCircle} alt="circle-bg" className="absolute lg:-right-[13%] -right-[40%] lg:-top-[20%] -top-[30%] scale-[25%] rotate-180" />
             <div className="lg:w-[83%] w-full mx-auto">
                 <div className="flex items-center justify-between lg:w-[82%] mx-auto">
