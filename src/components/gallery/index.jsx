@@ -86,7 +86,7 @@ export default function Gallery() {
                         <DisplaySeven />
                     </div>
                 </div>
-                <div className='lg:hidden max-w-screen-sm relative mx-auto py-6 flex items-center '>
+                <div className='lg:hidden max-w-screen-lg relative mx-auto py-6 flex items-center '>
                     <AliceCarousel
                         ref={carouselRef}
                         mouseTracking
@@ -95,8 +95,8 @@ export default function Gallery() {
                         autoPlay={false}
                         autoPlayInterval={5000}
                         infinite={true}
-                        paddingLeft={27}
-                        paddingRight={27}
+                        paddingLeft={28}
+                        paddingRight={28}
                         items={enhancedItems}
                         disableDotsControls={true}
                         keyboardNavigation={true}

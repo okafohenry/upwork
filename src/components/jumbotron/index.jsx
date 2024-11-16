@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Jumbotron() {
     return (
-        <div className="hero-bg" id="home">
+        <div className="hero-bg lg:h-[140vh] h-fit" id="home">
             <div className="mx-auto lg:w-[80%] w-[90%]">
                 <div data-aos="fade-down">
                     <h1 className="lg:text-[95px] text-[40px] text-center lg:pt-[20rem] pt-[15rem] lg:leading-[105px] leading-[45px]">Celebrate, Share, Remember<br className="lg:hidden block" /> All in One Place</h1>

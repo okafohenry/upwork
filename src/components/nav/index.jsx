@@ -2,10 +2,11 @@
 import Image from "next/image";
 import logo from '../../../public/logo.svg';
 import Link from "next/link";
-import { useState } from "react";
+import React, { useState } from "react";
 import ContactForm from "../contact-form";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import Dropdown from "./Dropdown";
+import ContactFormMobile from "../contact-form/FormMobile";
 
 export default function Nav({ isModalOpen, closeModal, openModal }) {
     const [ toggleDropdown, setToggleDropdown ] = useState(false)
@@ -35,10 +36,17 @@ export default function Nav({ isModalOpen, closeModal, openModal }) {
                 </div>    
             </nav>
             {isModalOpen &&
-                <ContactForm closeModal={closeModal} />
+                <React.Fragment>
+                    <ContactForm closeModal={closeModal} />
+                    <ContactFormMobile closeModal={closeModal} />
+                </React.Fragment>
             }
             {toggleDropdown &&
-                <Dropdown closeDropdown={() => setToggleDropdown(false)} isOpen={toggleDropdown} />
+                <Dropdown 
+                closeDropdown={() => setToggleDropdown(false)} 
+                isOpen={toggleDropdown} 
+                openContactModal={openModal}
+                />
             }
         </>
     )
