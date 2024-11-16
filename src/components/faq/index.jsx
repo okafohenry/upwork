@@ -23,13 +23,13 @@ export default function FAQ() {
 
     return (
         <div id="faq" className="bg-white lg:py-[160px] py-[120px] relative overflow-hidden">
-            <Image src={svg1} alt="svg1" className="lg:w-auto w-[20%] absolute -right-[2%] scale-75 -top-[4rem]" />
-            <Image src={svg2} alt="svg2" className="lg:w-auto w-[20%] absolute right-[11%] top-[15rem]" />
-            <Image src={svg3} alt="svg3" className="lg:w-auto w-[20%] absolute left-10 top-10" />
+            <Image src={svg1} alt="svg1" className="lg:w-auto w-[70%] absolute lg:-right-[2%] -right-[20%] scale-75 lg:-top-[4rem]" />
+            <Image src={svg2} alt="svg2" className="lg:w-auto w-[20%] absolute right-[11%] top-[15rem] lg:block hidden" />
+            <Image src={svg3} alt="svg3" className="lg:w-auto w-[20%] absolute lg:left-10 top-10" />
             <div className="lg:w-[70%] w-[90%] mx-auto text-center text-[#0D0D0D]">
-                <h1 data-aos="fade-up" className="lg:text-[65px] relative top-9 text-[#4F0D25]/[.9] text-[45px] font-[500] text-center lg:leading-[75px] tracking-wide leading-[60px]">Got Questions?</h1>
-                <h1 data-aos="fade-up" className="lg:text-[65px] relative top-9 text-[#4F0D25]/[.9] text-[45px] font-[500] text-center lg:leading-[75px] tracking-wide leading-[60px]">We've Got <span className="text-primary">Answers</span></h1>
-                <p data-aos="fade-up" className="lg:text-[27px] text-center text-[20px] mt-[4rem] text-[#4F0D25]/[.9] tracking-[2%]">Find quick answers to the most common questions</p>
+                <h1 data-aos="fade-up" className="lg:text-[65px] relative top-9 text-[#4F0D25]/[.9] text-[32px] font-[500] text-center lg:leading-[75px] tracking-wide leading-[40px]">Got Questions?</h1>
+                <h1 data-aos="fade-up" className="lg:text-[65px] relative top-9 text-[#4F0D25]/[.9] text-[32px] font-[500] text-center lg:leading-[75px] tracking-wide leading-[40px]">We've Got <span className="text-primary">Answers</span></h1>
+                <p data-aos="fade-up" className="lg:text-[27px] text-center text-[16px] mt-[4rem] text-[#4F0D25]/[.9] tracking-[2%]">Find quick answers to the most common questions</p>
             </div>
 
             <div data-aos="fade-up" className="lg:w-[65%] w-[95%] mx-auto grid lg:gap-y-7 gap-y-3 lg:mt-[5.5rem] mt-[3rem]">
