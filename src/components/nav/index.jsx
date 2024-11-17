@@ -11,7 +11,7 @@ import SuccessNotification from "../contact-form/SuccessNotification";
 
 export default function Nav({ isModalOpen, closeModal, openModal }) {
     const [ toggleDropdown, setToggleDropdown ] = useState(false)
-    const [ isEmailSent, setIsEmailSent ] = useState(true)
+    const [ isEmailSent, setIsEmailSent ] = useState(false)
 
     return (
         <>
