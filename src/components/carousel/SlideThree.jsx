@@ -19,15 +19,15 @@ export default function SlideThree({ activeOne, activeTwo }) {
 
   return (
     <div className='grid lg:grid-cols-10 grid-cols-1 gap-x-5 lg:h-[430px] lg:mt-[6rem] mt-[2.5rem] '>
-        <div onClick={activeOne} className='lg:flex hidden cursor-pointer lg:col-span-1 rounded-[50px] h-full bg-white/[.3] items-start relative z-10 px-[20px] pt-[20px]'>
+        <div onClick={activeOne} className='flex  cursor-pointer lg:col-span-1 rounded-[50px] h-full bg-white/[.3] items-start relative z-10 px-[20px] pt-[20px]'>
             <Image src={ai} alt='ai' className='cursor-pointer' />
         </div>
 
-        <div onClick={activeTwo} className='lg:flex cursor-pointer hidden lg:col-span-1 rounded-[50px] h-full bg-white/[.6] items-start px-[20px] pt-[20px]'>
+        <div onClick={activeTwo} className='flex cursor-pointer relative z-10 lg:col-span-1 rounded-[50px] h-full bg-white/[.6] items-start px-[20px] pt-[20px]'>
             <Image src={scan} alt='scan' className=''  />
         </div>
 
-        <div className='lg:col-span-8 col-span-1 lg:rounded-[50px] rounded-[24px] h-full bg-white shadow-xl py-[20px] lg:pl-[40px] pl-[20px] lg:pr-[5px] pr-[20px] origin-right transform scale-x-0 animate-curtain-close overflow-hidden'>
+        <div className='lg:col-span-8 col-span-1 rounded-[50px] relative z-10 h-full bg-white shadow-xl py-[20px] lg:pl-[40px] pl-[20px] lg:pr-[5px] pr-[20px] origin-right transform scale-x-0 animate-curtain-close overflow-hidden'>
             <div className="flex items-center justify-between">
                 <Image src={cheers} alt='cheers' className='lg:w-auto w-[12%]' />
             </div>

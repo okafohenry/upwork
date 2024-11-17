@@ -19,13 +19,13 @@ export default function SlideOne({ activeTwo, activeThree }) {
   }, []);
 
     return (
-        <div className='grid lg:grid-cols-10 grid-cols-1 gap-x-5 h-[430px] lg:mt-[6rem] mt-[2.5rem]'>
-            <div className='lg:col-span-8 col-span-1 lg:rounded-[50px] rounded-[24px] h-full bg-white shadow-xl py-[20px] lg:pl-[40px] pl-[20px] lg:pr-[5px] pr-[20px] origin-left transform scale-x-0 animate-curtain-close overflow-hidden'>
+        <div className='grid grid-cols-10 gap-x-5 h-[430px] lg:mt-[6rem] mt-[2.5rem]'>
+            <div className='col-span-8 rounded-[50px] relative z-10 h-full bg-white shadow-xl py-[20px] lg:pl-[40px] pl-[20px] lg:pr-[5px] pr-[20px] origin-left transform scale-x-0 animate-curtain-close overflow-hidden'>
                 <div className="flex items-center justify-between">
                     <Image src={ai} alt='ai' className='lg:w-auto w-[12%]' /> 
                 </div>
-                <div className="grid lg:grid-cols-6 grid-cols-1 gap-x-2 relative">
-                    <div className="lg:col-span-4 col-span-1 lg:order-1 order-2 relative z-10">
+                <div className="grid grid-cols-6 gap-x-2 relative">
+                    <div className="col-span-4  order-1 relative z-10">
                         <h2 className={`text-primary lg:text-[40px] text-[24px] font-[600] transition-opacity duration-500 ${ isContentVisible ? 'opacity-100' : 'opacity-0'
                         }`}>
                             Create Your Celebration Hub
@@ -37,7 +37,7 @@ export default function SlideOne({ activeTwo, activeThree }) {
                         Easily fill in everything—from your event itinerary and trivia questions <br /> to your gift list and love story, with AI assistance making it even easier to share your journey!
                         </p>
                     </div>
-                    <div className={`col-span-2 lg:order-2 order-1 flex justify-center lg:-mt-3 -mt-6 lg:absolute right-9 transition-opacity duration-500 ${
+                    <div className={`col-span-2 order-2 flex justify-center lg:-mt-3 -mt-6 lg:absolute right-9 transition-opacity duration-500 ${
                     isContentVisible ? 'opacity-100' : 'opacity-0'
                     }`}>
                         <Image src={robot} alt="robot" className="lg:w-[89%] w-[45%] lg:rotate-40" />
@@ -45,11 +45,11 @@ export default function SlideOne({ activeTwo, activeThree }) {
                 </div>
             </div>
 
-            <div onClick={activeTwo} className='lg:flex hidden cursor-pointer lg:col-span-1 rounded-[50px] h-full bg-white/[.6] items-start px-[20px] pt-[20px]'>
+            <div onClick={activeTwo} className='flex cursor-pointer relative z-10 lg:col-span-1 rounded-[50px] h-full bg-white/[.6] items-start px-[20px] pt-[20px]'>
                 <Image src={scan} alt='scan' className='cursor-pointer'  />
             </div>
 
-            <div onClick={activeThree} className='lg:flex hidden cursor-pointer lg:col-span-1 rounded-[50px] h-full bg-white/[.3] items-start px-[20px] pt-[20px]'>
+            <div onClick={activeThree} className='flex cursor-pointer relative z-10 lg:col-span-1 rounded-[50px] h-full bg-white/[.3] items-start px-[20px] pt-[20px]'>
                 <Image src={cheers} alt='cheers' className='cursor-pointer' />
             </div>
         </div>
