@@ -101,6 +101,7 @@ export default function Gallery() {
                         disableDotsControls={true}
                         keyboardNavigation={true}
                         onSlideChange={handleSlideChange}
+                        onSlideChanged={handleSlideChange}
                         renderPrevButton={() => {
                             return <Image onClick={handlePrevClick} src={previous} className="absolute top-[39.5%] bottom-[39.5%]" alt='previous' />
                         }}
@@ -108,19 +109,6 @@ export default function Gallery() {
                             return <Image onClick={handleNextClick} src={next} className="absolute top-[40%] bottom-[40%] right-2" alt='next' />
                         }}
                     />
-                     {/* Custom Buttons */}
-                    {/* <button
-                        onClick={handlePrevClick}
-                        className="absolute left-2 top-[50%] transform -translate-y-1/2 z-10"
-                    >
-                        <Image src={previous} alt="previous" />
-                    </button>
-                    <button
-                        onClick={handleNextClick}
-                        className="absolute right-2 top-[50%] transform -translate-y-1/2 z-10"
-                    >
-                        <Image src={next} alt="next" />
-                    </button> */}
                 </div>
             </div>
         </div>
