@@ -7,9 +7,11 @@ import ContactForm from "../contact-form";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import Dropdown from "./Dropdown";
 import ContactFormMobile from "../contact-form/FormMobile";
+import SuccessNotification from "../contact-form/SuccessNotification";
 
 export default function Nav({ isModalOpen, closeModal, openModal }) {
     const [ toggleDropdown, setToggleDropdown ] = useState(false)
+    const [ isEmailSent, setIsEmailSent ] = useState(true)
 
     return (
         <>
@@ -37,8 +39,14 @@ export default function Nav({ isModalOpen, closeModal, openModal }) {
             </nav>
             {isModalOpen &&
                 <React.Fragment>
-                    <ContactForm closeModal={closeModal} />
-                    <ContactFormMobile closeModal={closeModal} />
+                    <ContactForm 
+                    closeModal={closeModal} 
+                    openNotificationModal={() => setIsEmailSent(true)}
+                    />
+                    <ContactFormMobile 
+                        closeModal={closeModal} 
+                        openNotificationModal={() => setIsEmailSent(true)}
+                    />
                 </React.Fragment>
             }
             {toggleDropdown &&
@@ -47,6 +55,9 @@ export default function Nav({ isModalOpen, closeModal, openModal }) {
                 isOpen={toggleDropdown} 
                 openContactModal={openModal}
                 />
+            }
+            {isEmailSent &&
+            <SuccessNotification closeModal={() => setIsEmailSent(false)} />
             }
         </>
     )

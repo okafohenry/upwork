@@ -7,6 +7,7 @@ import { usertype } from '@/utils/utils'
 import { FaEnvelope, FaFacebook } from 'react-icons/fa'
 import bg1 from "../../../public/contact-form-mobile-bg2.svg"
 import bg2 from "../../../public/contact-form-mobile-bg.svg"
+import { toast } from 'react-toastify';
 
 const initialValues = {
   name: "",
@@ -16,8 +17,49 @@ const initialValues = {
   role: "bride"
 }
 
-export default function ContactFormMobile({ closeModal }) {
+export default function ContactFormMobile({ closeModal, openNotificationModal }) {
   const [ formData, setFormData ] = useState(initialValues);
+  const [loading, setLoading] = useState(false)
+
+  const handleSubmit = async(e) => {
+    e.preventDefault();
+    if(!formData.email) {
+      toast.error('Email is required!') 
+      return
+    }
+    if(!formData.name){
+      toast.error('Name is required!') 
+      return
+    }
+    if(!formData.message) {
+      toast.error('Message is required!') 
+      return
+    }
+
+    setLoading(true)
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+      setLoading(false)
+      if (response.ok) {
+        setFormData(initialValues)
+        closeModal()
+        openNotificationModal();
+      } else {
+          toast.error(`Failed to send message: ${result.error}`);
+      }
+    } catch (error) {
+      setLoading(false)
+    }
+    
+  }
 
   const inputStyle = 'border-0 outline-none lg:border-b-2 border-b border-[#4F0D25] focus:border-b-[#4F0D25] px-2 py-1 w-full placeholder-[#4F0D25] lg:placeholder:text-md placeholder:text-sm font-[Maian] bg-transparent'
 
@@ -89,8 +131,9 @@ export default function ContactFormMobile({ closeModal }) {
             </div>
             <button 
             className="text-[14px] w-[40%] mt-[.5rem] text-center bg-primary py-[13px] text-white  px-[10px] rounded-[50px]"
+            onClick={handleSubmit}
             >
-              Submit
+              {loading ? 'Sending...' : 'Submit' }
             </button>
         </div>
         <div className='py-10 relative z-10'>

@@ -1,7 +1,7 @@
-
 import "./globals.css";
 
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export const metadata = {
   title: "GatherGram",
@@ -16,6 +16,7 @@ export default function RootLayout({ children }) {
         className={`antialiased`}
       >
         {children}
+        <ToastContainer />
       </body>
     </html>
   );
