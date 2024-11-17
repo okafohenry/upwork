@@ -15,9 +15,9 @@ import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/alice-carousel.css";
 import next from "../../../public/control-next.svg"
 import previous from "../../../public/control-prev.svg"
-import Card from '../carousel/mobile/Card';
-import React, { useEffect, useState } from 'react';
+import React, {  useState } from 'react';
 import { gallery } from '@/utils/gallery';
+import Card from './mobile/Card';
 
 export default function Gallery() {
     const [activeIndex, setActiveIndex] = useState(0);
