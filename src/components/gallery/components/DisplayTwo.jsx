@@ -13,13 +13,26 @@ export default function DisplayTwo() {
             <h3 className={`${absoluteTop}`}>Event Details & Itinerary</h3>
             <p className={`${absoluteBottom}`}>Every Detail in One Place</p>
             
-            <div className="absolute object-cover w-full h-full inset-0 bg-[#FD7E72]  opacity-0 -translate-x-full group-hover:opacity-100 group-hover:translate-x-0 flex items-center justify-center transition-all duration-300">
-                <Image src={animation} alt="anim" className="absolute -top-3 rotate-[180deg] -right-3  opacity-0 -translate-x-full group-hover:opacity-100 group-hover:translate-x-0" />
-                <p className='w-[70%] h-auto m-auto text-center lg:text-[23px]'>
-                    Guests can access a beautifully<br /> organized event schedule and<br /> venue information, from ceremony<br /> timings to reception details,<br /> ensuring they’re informed and on<br /> time throughout the day
+            <div className="absolute object-cover w-full h-full inset-0 bg-[#FD7E72] opacity-0 group-hover:opacity-100 flex items-center justify-center transition-all duration-500 ease-in-out">
+                {/* First Image Animation - Angle 135 Degrees */}
+                <Image
+                    src={animation}
+                    alt="anim"
+                    className="absolute -top-5 -right-5 opacity-0 translate-x-[50%] translate-y-[50%] rotate-180 group-hover:opacity-100 group-hover:translate-x-0 group-hover:translate-y-0 transition-all duration-500 ease-in-out"
+                />
+                {/* Center Text */}
+                <p className="w-[70%] h-auto m-auto text-center lg:text-[23px]">
+                    Guests can access a beautifully<br /> organized event schedule and<br /> venue information, from ceremony<br />
+                    timings to reception details,<br /> ensuring they’re informed and on<br /> time throughout the day
                 </p>
-                <Image src={animation} alt="anim" className="absolute -bottom-3 -left-3 opacity-0 translate-x-full group-hover:opacity-100 group-hover:translate-x-0" />
+                {/* Second Image Animation - Angle -45 Degrees */}
+                <Image
+                    src={animation}
+                    alt="anim"
+                    className="absolute -bottom-5 -left-5 opacity-0 translate-x-[-50%] translate-y-[-50%] group-hover:opacity-100 group-hover:translate-x-0 group-hover:translate-y-0 transition-all duration-700 ease-in-out"
+                />
             </div>
+
         </div>
     )
 }
