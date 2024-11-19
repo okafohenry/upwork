@@ -15,9 +15,9 @@ export default function CelebrateSectionMobile() {
     return (
         <div className='grid gap-y-4 mt-[2.5rem]'>
             {/* ai  */}
-            <div className={` shadow-md shadow-[#00000040] transition-all duration-500 ease-in-out ${currentIndexMobile === 1 ? 'py-[20px] pl-[20px] pr-[20px] bg-white rounded-[32px] max-h-[500px]' : 'py-[10px] pl-[15px] pr-[20px] bg-white/[.6] rounded-[50px] max-h-[80px]  overflow-hidden' } relative z-10`}>
+            <div className={` shadow-md shadow-[#00000040] transition-all duration-500 ease-in-out ${currentIndexMobile === 1 ? 'py-[20px] pl-[20px] pr-[20px] bg-white rounded-[32px] max-h-auto' : 'py-[10px] pl-[15px] pr-[20px] bg-white/[.6] rounded-[50px] max-h-[80px]  overflow-hidden' } relative z-10`}>
                 <div onClick={() => setCurrentIndexMobile(1)} className="flex items-center justify-start w-full">
-                    <Image src={ai} alt='ai' className='lg:w-auto w-[12%]' /> 
+                    <Image src={ai} alt='ai' className='lg:w-auto md:w-[7%] w-[12%]' /> 
                 </div>
                 <div className={`grid grid-cols-1 gap-x-2 relative ${currentIndexMobile === 1 ? 'block' : 'hidden'}`}>
                     <div className=" col-span-1 order-2 relative z-10">
@@ -31,15 +31,15 @@ export default function CelebrateSectionMobile() {
                         </p>
                     </div>
                     <div className={`col-span-2 order-1 flex justify-center -mt-6 right-9 transition-opacity duration-500 `}>
-                        <Image src={robot} alt="robot" className="lg:w-[89%] w-[45%]" />
+                        <Image src={robot} alt="robot" className="lg:w-[89%]  w-[45%]" />
                     </div>
                 </div>
             </div>
 
             {/* scan  */}
-            <div className={` h-full  shadow-md shadow-[#00000040] transition-all duration-500 ease-in-out relative z-10   ${currentIndexMobile === 2 ? 'py-[20px] pl-[20px] pr-[20px] bg-white rounded-[32px] max-h-[500px]' : 'py-[10px] pl-[15px] pr-[20px] bg-white/[.6] rounded-[50px] max-h-[80px] ' }`}> 
+            <div className={` h-full  shadow-md shadow-[#00000040] transition-all duration-500 ease-in-out relative z-10   ${currentIndexMobile === 2 ? 'py-[20px] pl-[20px] pr-[20px] bg-white rounded-[32px] max-h-auto' : 'py-[10px] pl-[15px] pr-[20px] bg-white/[.6] rounded-[50px] max-h-[80px] ' }`}> 
                 <div className="flex items-center justify-start w-full" onClick={() => setCurrentIndexMobile(2)} >
-                    <Image src={scan} alt='scan' className='lg:w-auto w-[12%]'  />
+                    <Image src={scan} alt='scan' className='lg:w-auto md:w-[7%] w-[12%]'  />
                 </div>
                 <div className={`grid grid-cols-1 gap-x-2 relative ${currentIndexMobile === 2 ? 'block' : 'hidden'}`}>
                     <div className="lg:col-span-4 col-span-1 lg:order-1 order-2 relative z-10">
@@ -59,9 +59,9 @@ export default function CelebrateSectionMobile() {
             </div>
 
             {/* celebrate */}
-            <div className={`h-full shadow-md shadow-[#00000040] transition-all duration-500 ease-in-out relative z-10  ${currentIndexMobile === 3 ? 'py-[20px] pl-[20px] pr-[20px] bg-white rounded-[32px]  max-h-[500px]' : 'py-[10px] pl-[15px] pr-[20px] bg-white/[.7] rounded-[50px]  max-h-[80px]' }`}>
+            <div className={`h-full shadow-md shadow-[#00000040] transition-all duration-500 ease-in-out relative z-10  ${currentIndexMobile === 3 ? 'py-[20px] pl-[20px] pr-[20px] bg-white rounded-[32px]  max-h-auto' : 'py-[10px] pl-[15px] pr-[20px] bg-white/[.7] rounded-[50px]  max-h-[80px]' }`}>
                 <div className="flex items-center justify-start" onClick={() => setCurrentIndexMobile(3)}>
-                    <Image src={cheers} alt='cheers' className='lg:w-auto w-[12%]' />
+                    <Image src={cheers} alt='cheers' className='lg:w-auto md:w-[7%] w-[12%]' />
                 </div>
                 <div className={`grid grid-cols-1 gap-x-2 relative ${currentIndexMobile === 3 ? 'block' : 'hidden'}`}>
                     <div className="lg:col-span-4 col-span-1 lg:order-1 order-2 relative z-10">

@@ -1,3 +1,7 @@
+import Image from 'next/image'
+import animation from '../../../../public/gallery-anim2.svg'
+
+
 export default function DisplayTwo() {
     const cardStyle = 'rounded-[32px] shadow-lg relative'
     const absoluteTop = 'absolute text-white top-10 lg:text-[37px] text-[27px] ml-10'
@@ -10,9 +14,11 @@ export default function DisplayTwo() {
             <p className={`${absoluteBottom}`}>Every Detail in One Place</p>
             
             <div className="absolute object-cover w-full h-full inset-0 bg-[#FD7E72]  opacity-0 -translate-x-full group-hover:opacity-100 group-hover:translate-x-0 flex items-center justify-center transition-all duration-300">
+                <Image src={animation} alt="anim" className="absolute -top-3 rotate-[180deg] -right-3  opacity-0 -translate-x-full group-hover:opacity-100 group-hover:translate-x-0" />
                 <p className='w-[70%] h-auto m-auto text-center lg:text-[23px]'>
-                Guests can access a beautifully<br /> organized event schedule and<br /> venue information, from ceremony<br /> timings to reception details,<br /> ensuring they’re informed and on<br /> time throughout the day
+                    Guests can access a beautifully<br /> organized event schedule and<br /> venue information, from ceremony<br /> timings to reception details,<br /> ensuring they’re informed and on<br /> time throughout the day
                 </p>
+                <Image src={animation} alt="anim" className="absolute -bottom-3 -left-3 opacity-0 translate-x-full group-hover:opacity-100 group-hover:translate-x-0" />
             </div>
         </div>
     )
