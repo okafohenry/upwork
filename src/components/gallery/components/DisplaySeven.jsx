@@ -20,7 +20,7 @@ export default function DisplaySeven() {
                     className="absolute mx-auto top-[30%] opacity-0 scale-0 transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:scale-100"
                 />
                 <p className='w-[70%] h-auto m-auto text-center lg:text-[23px]'>
-                    With facial recognition, guests effortlessly <br />receive every photo they’re part of— <br />whether shared in the event feed or <br />captured by the photographer
+                    With facial recognition, guests effortlessly <br className='lg:block hidden'/>receive every photo they’re part of— <br className='lg:block hidden'/>whether shared in the event feed or <br />captured by the photographer
                 </p>
             </div>
         </div>

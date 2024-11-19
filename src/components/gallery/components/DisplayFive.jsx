@@ -25,11 +25,11 @@ export default function DisplayFive() {
                 <Image src={animation} alt="anim2" className='-rotate-[19deg] w-[25%] absolute top-0 left-0 opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-100 transition-all duration-500 ease-in-out' />
                 <Image src={animation} alt="anim2" className='-rotate-[19deg] w-[50%] absolute -bottom-7 -right-7 opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-100 transition-all duration-500 ease-in-out' />
                 <p className="w-[70%] h-auto m-auto text-center lg:text-[23px] relative z-30">
-                    With our easy-to-use digital <br />
-                    guestbook, guests can leave <br />
-                    heartfelt notes with the help of AI<br />
-                    to craft the perfect words, making<br />
-                    each message unique and<br />
+                    With our easy-to-use digital <br className='lg:block hidden'/>
+                    guestbook, guests can leave <br className='lg:block hidden'/>
+                    heartfelt notes with the help of AI<br className='lg:block hidden'/>
+                    to craft the perfect words, making<br className='lg:block hidden'/>
+                    each message unique and<br className='lg:block hidden'/>
                     memorable
                 </p>
             </div>

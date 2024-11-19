@@ -18,8 +18,8 @@ export default function DisplayOne() {
                 >
                 <Image src={animation} alt="anim" className="absolute -top-[8rem] -right-[8rem] transition-transform duration-500 ease-out group-hover:-rotate-180" />
                 <p className="w-[70%] h-auto m-auto text-center lg:text-[23px]">
-                    Invite guests to share their favorite<br /> snapshots and videos of your big day <br /><br />
-                    Relive every heartfelt moment with high<br />-quality downloads, preserving memories <br /> that last a lifetime
+                    Invite guests to share their favorite<br className='lg:block hidden'/> snapshots and videos of your big day <br className='lg:block hidden'/><br className='lg:block hidden'/>
+                    Relive every heartfelt moment with high<br className='lg:block hidden'/>-quality downloads, preserving memories <br className='lg:block hidden'/> that last a lifetime
                 </p>
                 <Image src={animation} alt="anim" className="absolute -bottom-[8rem] -left-[8rem] transition-transform duration-500 ease-out group-hover:-rotate-180" />
             </div>
