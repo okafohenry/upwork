@@ -14,7 +14,8 @@ const initialValues = {
   email: "",
   phone: "",
   message: "",
-  role: "bride"
+  role: "bride",
+  type: 'register'
 }
 
 export default function ContactFormMobile({ closeModal, openNotificationModal }) {

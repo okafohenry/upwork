@@ -1,10 +1,54 @@
-import React from 'react'
+"use client"
+import React, { useEffect, useState } from 'react'
 import logo from '../../../public/logo-footer.svg';
 import Image from 'next/image';
 import Link from 'next/link';
+import SuccessNotification from '../contact-form/SuccessNotification';
+import { toast } from 'react-toastify';
+
+const initialValues = {
+  email: "",
+  type: 'subscribe'
+}
 
 export default function Footer() {
+  const [ formData, setFormData ] = useState(initialValues);
+  const [loading, setLoading] = useState(false)
+  const [ showNotification, setShowNotification] = useState(false)
 
+
+  const handleSubmit = async(event) => {
+      event.preventDefault();
+      if(!formData.email) {
+        toast.error('Email is required!') 
+        return
+      }
+  
+      setLoading(true)
+      try {
+        const response = await fetch('/api/contact', {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        });
+  
+        const result = await response.json();
+        setLoading(false)
+        if (response.ok) {
+          setFormData(initialValues)
+          setShowNotification(true);
+        } else {
+            toast.error(`Failed to send message: ${result.error}`);
+        }
+      } catch (error) {
+        setLoading(false)
+      }
+      
+  }
+
+  
   const flexStyle = 'lg:flex grid items-center justify-between w-full'
 
   return (
@@ -19,10 +63,14 @@ export default function Footer() {
             <input 
               className='rounded-[50px] py-[10px] px-[16px] lg:w-[70%] text-[14px] placeholder-[#4D4D4D] bg-[#FAFAFACC] text-[#0d0d0d] outline-primaryLight' 
               placeholder='Enter your email'
+              onChange={(e) => setFormData({...formData, email: e.target.value})}
+              value={formData.email}
               type="email" 
               />
             <div className='lg:w-[30%]'>
-              <button className='rounded-[50px] py-[10px] lg:px-0 px-[20px] text-center w-full  bg-primary text-white text-[14px]'>Subscribe</button>
+              <button onClick={handleSubmit} className='rounded-[50px] py-[10px] lg:px-0 px-[20px] text-center w-full  bg-primary text-white text-[14px]'>
+                {loading ? 'Processing..' : 'Subscribe'}
+              </button>
             </div>
           </div>
         </div>
@@ -98,6 +146,10 @@ export default function Footer() {
           &copy; 2024  GatherGram, all rights reserved.
         </div>
       </div>
+
+      {showNotification &&
+        <SuccessNotification closeModal={() => setShowNotification(false)} />
+      }
     </footer>
   )
 }
