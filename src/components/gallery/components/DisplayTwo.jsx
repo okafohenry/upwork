@@ -22,8 +22,8 @@ export default function DisplayTwo() {
                 />
                 {/* Center Text */}
                 <p className="w-[70%] h-auto m-auto text-center lg:text-[23px]">
-                    Guests can access a beautifully<br /> organized event schedule and<br /> venue information, from ceremony<br />
-                    timings to reception details,<br /> ensuring they’re informed and on<br /> time throughout the day
+                    Guests can access a beautifully<br className='hidden lg:block' /> organized event schedule and<br  className='hidden lg:block' /> venue information, from ceremony<br  className='hidden lg:block' />
+                    timings to reception details,<br  className='hidden lg:block' /> ensuring they’re informed and on<br  className='hidden lg:block' /> time throughout the day
                 </p>
                 {/* Second Image Animation - Angle -45 Degrees */}
                 <Image
